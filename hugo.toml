@@ -16,7 +16,7 @@ noClasses = false
 contentTypeName = "posts"
 
 # if you set this to 0, only submenu trigger will be visible
-showMenuItems = 5
+showMenuItems = 6
 
 # show selector to switch language
 showLanguageSelector = false
@@ -101,7 +101,12 @@ logoHomeLink = "/"
 identifier = "about"
 name = "About"
 url = "/about"
-weight = 10
+weight = 70
+[[languages.en.menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 15
 [[languages.en.menu.main]]
 identifier = "projects"
 name = "Projects"
@@ -123,6 +128,59 @@ name = "Tools"
 url = "/tools"
 weight = 50
 
+
+# Svenska språkkonfigurationen
+[languages.sv]
+languageName = "Svenska"
+title = "Itiquette"
+[languages.sv.params]
+subtitle = "Ad Astra"
+owner = ""
+keywords = ""
+copyright = ""
+menuMore = "Visa mer"
+readMore = "Läs mer"
+readOtherPosts = "Läs andra inlägg"
+newerPosts = "Nyare inlägg"
+olderPosts = "Äldre inlägg"
+missingContentMessage = "Sidan hittades inte..."
+missingBackButtonLabel = "Hem"
+minuteReadingTime = "min läsning"
+words = "ord"
+[languages.sv.params.logo]
+logoText = ">"
+logoHomeLink = "/"
+[languages.sv.menu]
+[[languages.sv.menu.main]]
+identifier = "about"
+name = "Om"
+url = "/about"
+weight = 70
+[[languages.sv.menu.main]]
+identifier = "blog"
+name = "Blogg"
+url = "/posts/"
+weight = 15
+[[languages.sv.menu.main]]
+identifier = "projects"
+name = "Projekt"
+url = "/projects"
+weight = 20
+[[languages.sv.menu.main]]
+identifier = "translations"
+name = "Översättningar"
+url = "/translations"
+weight = 30
+[[languages.sv.menu.main]]
+identifier = "shortcuts"
+name = "Genvägar"
+url = "/shortcuts"
+weight = 40
+[[languages.sv.menu.main]]
+identifier = "tools"
+name = "Verktyg"
+url = "/tools"
+weight = 50
 
 [caches]
 [caches.images]
