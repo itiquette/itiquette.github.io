@@ -13,8 +13,7 @@ A short bio might be in place.
 
 As a typical Generation X developer from Sweden, I've been in the open source game since we traded [Fred Fish floppies](https://datagubbe.se/fish/) with "send me a postcard" licenses, and I've learned and forgotten many languages and frameworks. It has been a long ride, from the days of [BBS](https://en.wikipedia.org/wiki/Bulletin_board_system) (spending my mom's phone bills) to the current AI-driven shift.
 
-These days I split my time between coding and helping organizations level up their open source processes. Open Source Lead, and so on, I have been called. I still write a lot of code – can't keep me away from the terminal for long. 
-
+These days I split my time between develop, security and helping organizations level up their open source processes. I still write a lot of code.
 Linux is my `$HOME`. [CLI tools](https://gabevenberg.com/posts/cli-renaissance/) is often, but not always my choice. I thrive in DevOps environments. I have translated a lot of FOSS over the years.
 
 ## I've got a soft spot for:
