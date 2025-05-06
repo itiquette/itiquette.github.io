@@ -19,7 +19,7 @@ contentTypeName = "posts"
 showMenuItems = 6
 
 # show selector to switch language
-showLanguageSelector = false
+showLanguageSelector = true
 
 # set theme to full screen width
 fullWidthTheme = false
@@ -119,7 +119,7 @@ url = "/translations"
 weight = 30
 [[languages.en.menu.main]]
 identifier = "shortcuts"
-name = "Shortcuts"
+name = "Keyboard shortcuts"
 url = "/shortcuts"
 weight = 40
 [[languages.en.menu.main]]
@@ -139,47 +139,47 @@ owner = ""
 keywords = ""
 copyright = ""
 menuMore = "Visa mer"
-readMore = "Läs mer"
+readMore = "Visa mer"
 readOtherPosts = "Läs andra inlägg"
 newerPosts = "Nyare inlägg"
 olderPosts = "Äldre inlägg"
 missingContentMessage = "Sidan hittades inte..."
 missingBackButtonLabel = "Hem"
-minuteReadingTime = "min läsning"
+minuteReadingTime = "läst i..."
 words = "ord"
 [languages.sv.params.logo]
 logoText = ">"
 logoHomeLink = "/"
 [languages.sv.menu]
 [[languages.sv.menu.main]]
-identifier = "about"
+identifier = "om"
 name = "Om"
-url = "/about"
+url = "/sv/om"
 weight = 70
 [[languages.sv.menu.main]]
 identifier = "blog"
 name = "Blogg"
-url = "/posts/"
+url = "/sv/posts/"
 weight = 15
 [[languages.sv.menu.main]]
 identifier = "projects"
 name = "Projekt"
-url = "/projects"
+url = "/sv/projects"
 weight = 20
 [[languages.sv.menu.main]]
 identifier = "translations"
 name = "Översättningar"
-url = "/translations"
+url = "/sv/translations"
 weight = 30
 [[languages.sv.menu.main]]
 identifier = "shortcuts"
-name = "Genvägar"
-url = "/shortcuts"
+name = "Tangentbordsgenvägar"
+url = "/sv/shortcuts"
 weight = 40
 [[languages.sv.menu.main]]
 identifier = "tools"
 name = "Verktyg"
-url = "/tools"
+url = "/sv/tools"
 weight = 50
 
 [caches]
