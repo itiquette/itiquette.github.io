@@ -53,11 +53,12 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action |
 |----------|--------|
-| `PrtScr` | Take screenshot |
+| `PrtScr` | Take screenshot of area |
 | `Alt+PrtScr` | Take screenshot of window |
-| `Shift+PrtScr` | Take screenshot of area |
+| `Shift+PrtScr` | Take screenshot of desktop |
 
 ## Terminal Multiplexer (Zellij)
+
 
 ### Mode Switching
 
@@ -137,6 +138,7 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `Alt+-` | Decrease size |
 | `Alt+[/]` | Previous/next layout |
 | `Alt+i/o` | Move tab left/right |
+| `Shift` | Hold to bypass Zellij mouse override |
 
 ## Fish Shell with Vim Mode
 

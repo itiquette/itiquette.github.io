@@ -195,6 +195,78 @@ These platforms host multiple projects and provide tools specifically designed f
   *Examples: Editor interface, map legends, wiki documentation, tagging guidelines*
 - [FSFE Translation:](https://fsfe.org/contribute/translators/translators.en.html) Translations related to FSFE projects.
 
+
+## Translation for Mobile Platforms
+
+---
+
+### F-Droid and Alternative App Stores
+
+- **[F-Droid][59]**: Help localize the leading free app store for Android. Make FOSS apps more accessible in your language.  
+  *Examples: App descriptions, categories, installation instructions, user interface*
+- **[Aurora Store][61]**: A privacy-focused Google Play alternative that needs translators.  
+  *Examples: Search features, app recommendations, settings menus*
+
+### FOSS Mobile Applications
+
+- **[Signal][62]**: Help more people communicate securely by translating this encrypted messaging app.  
+  *Examples: Installation guides, security features, user instructions*
+- **[NewPipe][63]**: A YouTube alternative that respects user privacy and needs translators.  
+  *Examples: Video player interface, settings, download features*
+- **[OsmAnd][64]**: Offline mapping application based on OpenStreetMap data.  
+  *Examples: Navigation directions, points of interest, map symbols*
+
+### Application Frameworks
+
+- **[KDE Localization for Mobile][65]**: Translate KDE applications running on Plasma Mobile.  
+  *Examples: System settings, application descriptions, user interface components*
+- **[Librem 5/PureOS][66]**: Help translate a completely free mobile operating system.  
+  *Examples: System messages, settings, help documentation*
+
+## Translation for the Android Ecosystem
+
+---
+
+### Popular FOSS Android Applications
+
+- **[K-9 Mail][67]**: Powerful email client focusing on security and customizability.  
+  *Examples: Account settings, message handling, filtering features*
+- **[AnySoftKeyboard][68]**: Customizable keyboard with support for multiple languages.  
+  *Examples: Language packs, settings menus, key layouts*
+- **[AntennaPod][69]**: Podcast player and manager needing translators.  
+  *Examples: Playlist, download options, search interface*
+- **[Nextcloud Android][70]**: Mobile client for Nextcloud file storage and synchronization.  
+  *Examples: File management instructions, sharing features, security settings*
+- **[DAVx⁵][71]**: Calendar and contacts synchronization with CalDAV/CardDAV.  
+  *Examples: Synchronization settings, error messages, account descriptions*
+
+### Specialized Android Applications
+
+- **[Open Camera][72]**: Advanced camera app with many photography features.  
+  *Examples: Camera settings, shooting modes, photo tips*
+- **[Gadgetbridge][73]**: Communication with smartwatches and fitness bands without proprietary apps.  
+  *Examples: Device connection, notification handling, health monitoring*
+- **[Organic Maps][74]**: Private, offline maps and navigation without tracking.  
+  *Examples: Route descriptions, place categories, search options*
+- **[Simple Mobile Tools][75]**: A whole suite of basic applications (calendar, gallery, notes).  
+  *Examples: Feature descriptions, settings menus, user guides*
+
+### Android Alternatives & Customizations
+
+- **[LineageOS][76]**: One of the most popular alternative Android systems.  
+  *Examples: System settings, security features, startup guides*
+- **[GrapheneOS][77]**: A privacy and security-focused mobile system.  
+  *Examples: Installation guides, security tips, app compatibility*
+- **[/e/ OS][78]**: Android without Google services that needs translators.  
+  *Examples: System apps, account settings, cloud integration*
+
+### Translation Platforms for Mobile Projects
+
+- **[Weblate Android Projects][79]**: Central platform where many Android projects gather their translation resources.  
+  *Examples: Projects grouped by category, translation statistics, term lists*
+- **[Android Libretranslate][80]**: Help improve machine learning-based translation tools for mobile devices.  
+  *Examples: App interface, language databases, training data*
+
 ## Individual Programs
 
 ---
@@ -260,3 +332,24 @@ Translation processes vary greatly across different projects - some use platform
 [55]: <https://savannah.gnu.org/> "GNU Savannah - hosting and coordination for free software projects"
 [57]: <https://manpages-l10n-team.pages.debian.net/manpages-l10n/> "Project for translating Linux manual pages"
 [58]: <https://wiki.openstreetmap.org/wiki/Translations> "OpenStreetMap Translation"
+[59]: https://f-droid.org/docs/Translation_and_Localization/
+[61]: https://hosted.weblate.org/projects/aurora-store/
+[62]: https://github.com/signalapp/Signal-iOS/blob/main/Signal/translations/TRANSLATIONS.md
+[63]: https://github.com/TeamNewPipe/NewPipe/blob/dev/README.md#translate
+[64]: https://hosted.weblate.org/projects/osmand/
+[65]: https://community.kde.org/Get_Involved/translation
+[66]: https://source.puri.sm/Librem5/translations
+[67]: https://hosted.weblate.org/projects/tb-android/-/sv/
+[68]: https://github.com/AnySoftKeyboard/AnySoftKeyboard/blob/master/CONTRIBUTING.md#translations
+[69]: https://hosted.weblate.org/projects/antennapod/
+[70]: https://github.com/nextcloud/android/blob/master/CONTRIBUTING.md#translations
+[71]: https://www.davx5.com/faq/contributing/how-to-contribute-translations
+[72]: https://hosted.weblate.org/projects/open-camera/strings/
+[73]: https://gadgetbridge.org/faq/translating/
+[74]: https://github.com/organicmaps/organicmaps/blob/master/docs/CONTRIBUTING.md#translations
+[75]: https://github.com/SimpleMobileTools/General-Discussion#translations
+[76]: https://wiki.lineageos.org/how-to/translate
+[77]: https://grapheneos.org/contribute#translation
+[78]: https://gitlab.e.foundation/e/apps/translation
+[79]: https://hosted.weblate.org/projects/#filter:android
+[80]: https://github.com/LibreTranslate/LibreTranslate

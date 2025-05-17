@@ -1,6 +1,6 @@
 +++
 title = 'On Translating Free Software'
-date = 2025-05-04T07:07:07+01:00
+date = 2025-05-17T07:07:07+01:00
 draft = false
 tags = ["opensource", "foss", "translation","l18n","l10n"]
 +++
@@ -19,13 +19,15 @@ Additionally, it exposes the translator to the full functionality of the softwar
 
 Another benefit is that translation improves the translator's personal language skills.
 
+Also, AI-translations as a tool is really helpful, however, adding some human interaction and review will raise the quailty of those.
+
 So, for those seeking to contribute to free software, translation offers a good entry point, requiring minimal programming knowledge.
 
 ## Challenges
 
 While professional translation expertise isn't required, basic language proficiency is crucial for a good translation. Correct spelling and proper verb conjugations are non-negotiable. Poor translations can destroy software usability and user trust in the project, and even introduce bugs into the translated application.
 
-Maintaining consistent terminology across different contexts is also essential for high-quality translations. There are several valid translations for terms, for example *(like "file" which can be "arkiv," "fil," or "arkivera" in Swedish)*.
+Maintaining consistent terminology across different contexts is also essential for high-quality translations. There are several valid translations for terms, for example _(like "file" which can be "arkiv," "fil," or "arkivera" in Swedish)_.
 
 Translation work can become a time sink, sometimes serving as productive procrastination, as it is easy to see results and progress. Limiting translation time helps maintain balance while still contributing.
 

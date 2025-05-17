@@ -53,9 +53,9 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `PrtScr` | Ta skärmdump |
+| `PrtScr` | Ta skärmdump av område |
 | `Alt+PrtScr` | Ta skärmdump av fönster |
-| `Shift+PrtScr` | Ta skärmdump av område |
+| `Shift+PrtScr` | Ta skärmdump |
 
 ## Terminalmultiplexer (Zellij)
 
@@ -137,6 +137,7 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `Alt+-` | Minska storlek |
 | `Alt+[/]` | Föregående/nästa layout |
 | `Alt+i/o` | Flytta flik vänster/höger |
+| `Shift` | Håll inne för att åsidosätta Zellij mushantering |
 
 ## Fish Shell med Vim-läge
 
