@@ -22,6 +22,7 @@ På Itiquette hittar du förgreningar av flera GitHub-projekt som översätts ti
 | [Open Source Guide - GitHub](https://github.com/itiquette/opensource.guide)                                      | Allmän guide om öppen källkod                                |
 | [Keep-A-Changelog](https://github.com/itiquette/keep-a-changelog)                                                | Riktlinje för ändringsloggar                                 |
 | [Standard for Public Code](https://github.com/itiquette/community-translations-standard/tree/swedishtranslation) | En standard för offentlig kod                                |
+| [Fish Shell](https://github.com/itiquette/fish-shell)                                                            | Skalet fish                                                  |
 
 ---
 
