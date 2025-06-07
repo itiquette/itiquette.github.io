@@ -9,7 +9,8 @@ hideDate = 'true'
 
 # Condensed Shortcut Reference
 
-This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal multiplexers, shell environments, code editors, browsers, and development tools
+A condensed overview of the [more common shortcuts](shortcutsall.md) across Ubuntu, terminal multiplexers, shell environments, code editors, browsers, and development tools.
+Under constant change:)
 
 ## Table of Contents
 
@@ -17,11 +18,10 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 - [Terminal Multiplexer (Zellij)](#terminal-multiplexer-zellij)
 - [Fish Shell with Vim Mode](#fish-shell-with-vim-mode)
 - [Fish Shell with fzf.fish](#fish-shell-with-fzffish)
-- [Neovim/LazyVim](#neovimlazyvimy)
+- [Neovim/LazyVim](#neovimlazyvim)
 - [VSCode with Neovim Extension](#vscode-with-neovim-extension)
 - [Browser Navigation with Vimium](#browser-navigation-with-vimium)
 - [Browser Developer Tools](#browser-developer-tools)
-- [Integration Examples](#integration-examples)
 
 ## System Environment (Ubuntu/GNOME)
 
@@ -39,7 +39,7 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `Alt+F6` | Switch windows of the same application |
 | Ctrl+Alt+D | Show desktop |
 | `Super+M` | Toggle notification panel |
-| `Super+L` or `Ctrl+Alt+L` | Lock screen |
+| `Super+L` | Lock screen |
 | `Ctrl+Alt+Del` | Log out |
 
 ### Workspace Navigation
@@ -59,6 +59,19 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 ## Terminal Multiplexer (Zellij)
 
+### Shared Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+q` | Quit |
+| `Alt+f` | Toggle floating panes |
+| `Alt+n` | New pane |
+| `Alt+h/j/k/l` | Move focus left/down/up/right |
+| `Alt+=` or `Alt++` | Increase size |
+| `Alt+-` | Decrease size |
+| `Alt+[ or Alt+]` | Previous/next layout |
+| `Alt+i/o` | Move tab left/right |
+| `Shift` | Hold to bypass Zellij mouse override |
 
 ### Mode Switching
 
@@ -119,26 +132,12 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `j/k` or `Down/Up` | Scroll down/up |
 | `Ctrl+f`/`Ctrl+b` or `Page Down/Up` | Page scroll down/up |
 | `d/u` | Half page scroll down/up |
-| `e` | Edit scrollback |
+| `e` | Edit scrollback (the way of copy a listing in zellij) |
 | `s` | Enter search mode |
 | `n/p` | Search next/previous |
 | `c` | Toggle case sensitivity |
 | `w` | Toggle wrap |
 | `o` | Toggle whole word |
-
-### Shared Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+q` | Quit |
-| `Alt+f` | Toggle floating panes |
-| `Alt+n` | New pane |
-| `Alt+h/j/k/l` | Move focus left/down/up/right |
-| `Alt+=` or `Alt++` | Increase size |
-| `Alt+-` | Decrease size |
-| `Alt+[/]` | Previous/next layout |
-| `Alt+i/o` | Move tab left/right |
-| `Shift` | Hold to bypass Zellij mouse override |
 
 ## Fish Shell with Vim Mode
 
@@ -181,25 +180,15 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `x` | Delete character |
 | `~` | Change case |
 
-### Search and History
-
-| Shortcut | Action |
-|----------|--------|
-| `/pattern` | Search forward |
-| `?pattern` | Search backward |
-| `n/N` | Next/previous search result |
-| `*/#` | Search for word under cursor forward/backward |
-
 ### Command History (Default Mode)
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+p` or `Up` | Previous command |
-| `Ctrl+n` or `Down` | Next command |
+| `k` | Previous command |
+| `j` | Next command |
 | `Ctrl+r` | Reverse search through history |
-| `Alt+.` | Insert last argument of previous command |
 
-### Line Editing (Default Mode)
+### Line Editing (Emacs Mode)
 
 | Shortcut | Action |
 |----------|--------|
@@ -211,7 +200,6 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `Ctrl+k` | Delete from cursor to end of line |
 | `Ctrl+w` | Delete previous word |
 | `Alt+d` | Delete next word |
-| `Ctrl+t` | Swap two characters |
 | `Alt+t` | Swap two words |
 | `Ctrl+l` | Clear screen |
 | `Ctrl+c` | Cancel command |
@@ -223,29 +211,22 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action | Description |
 |----------|--------|-------------|
-| `Ctrl+Alt+F` | Search Directory | Find files in current directory |
-| `Ctrl+Alt+L` | Search Git Log | Browse and insert commit hashes |
-| `Ctrl+Alt+S` | Search Git Status | Find modified/staged/untracked files |
-| `Ctrl+R` | Search History | Find commands in shell history |
-| `Ctrl+Alt+P` | Search Processes | Find and insert process IDs |
-| `Ctrl+V` | Search Variables | Find and insert shell variables |
+| `Ctrl+Alt+f/F` | Search Directory | Find files in current directory |
+| `Ctrl+Alt+l` | Search Git Log | Browse and insert commit hashes |
+| `Ctrl+Alt+s` | Search Git Status | Find modified/staged/untracked files |
+| `Ctrl+s` | Search History | Find commands in shell history |
+| `Ctrl+Alt+p` | Search Processes | Find and insert process IDs |
+| `Ctrl+v` | Search Variables | Find and insert shell variables |
 
 ### fzf Navigation
 
 | Shortcut | Action |
 |----------|--------|
-| `↑/↓` or `Ctrl+p/n` | Navigate up/down |
+| `Ctrl+k/j` | Navigate up/down |
 | `Enter` | Select item |
 | `Tab` | Select multiple items |
 | `Shift+Tab` | Deselect item |
-| `Ctrl+Space` | Toggle selection |
-| `Alt+Enter` | Select all matches |
 | `Esc` or `Ctrl+g` | Cancel |
-| `?` | Toggle preview window |
-| `Alt+↑/↓` | Scroll preview window |
-| `Ctrl+/` | Toggle help |
-| `Ctrl+r` | Toggle sort |
-| `Alt+w` | Toggle preview wrap |
 
 ## Neovim/LazyVim
 
@@ -271,8 +252,7 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `tx/Tx` | Move till before next/previous 'x' |
 | `;/,` | Repeat last f/F/t/T forward/backward |
 | `%` | Jump to matching brace |
-| `[(/])` | Jump to previous/next '(' |
-| `[{/]}` | Jump to previous/next '{' |
+| `yl` | Yank a char |
 
 ### Editing
 
@@ -282,7 +262,6 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `a/A` | Insert after cursor/at line end |
 | `o/O` | Open line below/above |
 | `r/R` | Replace character/enter replace mode |
-| `s/S` | Substitute character/line |
 | `c{motion}` | Change text |
 | `cc` | Change line |
 | `C` | Change to end of line |
@@ -298,8 +277,9 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `.` | Repeat last change |
 | `~` | Toggle case |
 | `g~/gu/gU` | Toggle/lower/upper case |
-| `=` | Auto-indent |
-| `>/<` | Indent/dedent |
+| `==` | Auto-indent current line |
+| `=G` | Auto-indent from cursor to end of file |
+| `gg=G` | Auto-indent entire file (go to top, then indent to end) |
 
 ### Text Objects
 
@@ -323,12 +303,9 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 |----------|--------|
 | `v/V/Ctrl+v` | Start character/line/block selection |
 | `o/O` | Move to other end of selection/other corner |
-| `gv` | Reselect last visual selection |
-| `>/<` | Indent/dedent selection |
 | `=` | Auto-indent selection |
 | `y/d/c/x` | Yank/delete/change/delete selection |
 | `u/U` | Change selection to lowercase/uppercase |
-| `~` | Toggle case of selection |
 | `I/A` | Insert at start/end of all selected lines (in block mode) |
 
 ### Search and Replace
@@ -351,7 +328,6 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `m{a-zA-Z}` | Set mark |
 | `` `{mark} `` | Jump to mark position |
 | `'{mark}` | Jump to mark line |
-| `` `" `` | Jump to position before last exit |
 | `` `. `` | Jump to position of last change |
 | `Ctrl+o/i` | Go to older/newer position in jump list |
 | `g;/g,` | Go to older/newer position in change list |
@@ -360,18 +336,14 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+w s` | Split window horizontally |
 | `Ctrl+w v` | Split window vertically |
+| `Ctrl+w s` | Split window horizontally |
 | `Ctrl+w q` | Close window |
 | `Ctrl+w o` | Close all windows except current |
 | `Ctrl+w h/j/k/l` | Move to left/down/up/right window |
 | `Ctrl+w H/J/K/L` | Move window left/down/up/right |
 | `Ctrl+w r/R` | Rotate windows down/up |
-| `Ctrl+w +/-` | Increase/decrease height |
-| `Ctrl+w >/<` | Increase/decrease width |
 | `Ctrl+w =` | Equal dimensions for all windows |
-| `Ctrl+w _` | Maximize height |
-| `Ctrl+w |` | Maximize width |
 | `Ctrl+w T` | Move window to new tab |
 
 ### Tab Management
@@ -413,8 +385,8 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `K` | Show hover documentation |
 | `gK` | Show signature help |
 | `<leader>ca` | Code action |
-| `<leader>cr` | Rename symbol |
 | `<leader>cf` | Format code |
+| `<leader>cr` | Rename symbol |
 | `<leader>cd` | Line diagnostics |
 | `]d/[d` | Next/previous diagnostic |
 | `]e/[e` | Next/previous error |
@@ -430,8 +402,8 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `<leader>fr` | Recent files |
 | `<leader>/` | Grep in files |
 | `<leader>sg` | Grep in files |
-| `<leader>sw` | Search word under cursor |
 | `<leader>ss` | Go to symbol |
+| `<leader>sw` | Search word under cursor |
 
 ### Git Integration (LazyVim)
 
@@ -504,32 +476,23 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action |
 |----------|--------|
-| `=/==` | Format selection/line |
-| `<leader>ca` | Code actions |
-| `<leader>cr` | Rename symbol |
-| `<leader>cf` | Format file |
+| `Ctrl+.` | Code actions |
+| `F2` | Rename symbol |
+| `Shift+Alt+F` | Format file |
 
-### Multiple Cursors
-
-| Shortcut | Action |
-|----------|--------|
-| Visual Line + `ma/mA` | Add cursor at end of each line |
-| Visual Line + `mi/mI` | Add cursor at start of each line |
-| Visual Block + `ma` | Add cursor after block |
-| Visual Block + `mi` | Add cursor before block |
-
-### Explorer Navigation
+### Vim Shortcut Alternatives to Multi-Cursor
 
 | Shortcut | Action |
 |----------|--------|
-| `j/k` | Move up/down |
-| `h/l` | Collapse/expand |
-| `Enter` | Open file |
-| `o` | Toggle expand |
-| `a/A` | New file/folder |
-| `r` | Rename |
-| `d` | Delete |
-| `y/x/p` | Copy/cut/paste |
+| `*` | Search for word under cursor |
+| `cgn` | Change next occurrence |
+| `.` | Repeat last change |
+| `n` | Skip to next occurrence |
+| `N` | Skip to previous occurrence |
+| `:%s/old/new/gc` | Global search & replace with confirmation |
+| `:%s/old/new/g` | Global search & replace (no confirmation) |
+| `/pattern` | Search for pattern |
+| `?pattern` | Search backwards for pattern |
 
 ### VSCode Native Features
 
@@ -539,14 +502,33 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `F9` | Toggle breakpoint |
 | `F10` | Step over |
 | `F11/Shift+F11` | Step into/out |
-| `Ctrl+`` | Toggle terminal |
+| `Ctrl+Shift+`` | Toggle terminal |
 | `Ctrl+Shift+E` | Show explorer |
 | `Ctrl+Shift+G` | Show source control |
 | `Ctrl+Shift+D` | Show debug panel |
 | `Ctrl+Shift+X` | Show extensions |
 | `Ctrl+P` | Quick open files |
 | `Ctrl+Shift+P` | Show command palette |
-| `Ctrl+K Ctrl+Z` | Zen mode |
+
+### Explorer Navigation
+
+| Shortcut | Action |
+|----------|--------|
+| `j/k` | Move up/down |
+| `h/l` | Collapse/expand |
+| `Enter` | Open file |
+| `Space` | Preview file (keep focus in explorer) |
+| `a/A` | New file/folder |
+| `r` | Rename |
+| `d` | Delete |
+| `y/x/p` | Copy/cut/paste |
+
+### General Panel Navigation
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+0` | Focus on sidebar |
+| `Ctrl+1` | Focus back to editor |
 
 ## Browser Navigation with Vimium
 
@@ -575,11 +557,10 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action |
 |----------|--------|
-| `J/K` or `gT/gt` | Go to previous/next tab |
-| `g0/g$` | Go to first/last tab |
-| `t` | Create new tab |
-| `x/X` | Close tab/restore closed tab |
-| `^` | Go to previously-visited tab |
+| `Ctrl+Tab` / `Ctrl+Shift+Tab` | Go to previous/next tab |
+| `g0/g$ or Alt+9` | Go to first/last tab |
+| `Ctrl+t` | Create new tab |
+| `Ctrl+W` | Close tab |
 | `T` | Search tabs |
 
 ### History Navigation
@@ -618,8 +599,8 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+Shift+I` or `F12` | Open DevTools |
-| `Ctrl+Shift+J` | Open console |
+| `Ctrl+Shift+I` | Toggle DevTools |
+| `Ctrl+Shift+K` | Console |
 | `Ctrl+Shift+C` | Inspect element |
 | `Ctrl+]` / `Ctrl+[` | Navigate forward/back in panel history |
 | `Ctrl+Shift+M` | Toggle device mode |
@@ -632,7 +613,6 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `F10` or `Ctrl+'` | Step over |
 | `F11` or `Ctrl+;` | Step into |
 | `Shift+F11` or `Ctrl+Shift+;` | Step out |
-| `Ctrl+F8` | Disable all breakpoints |
 
 ### Console
 
@@ -641,23 +621,4 @@ This compiles [essential shortcuts](shortcutsall.md) across Ubuntu, terminal mul
 | `Ctrl+L` | Clear console |
 | `Up/Down` | Navigate command history |
 | `Shift+Enter` | Multi-line entry |
-| `Ctrl+F` | Search console history |
 | `Esc` | Toggle console drawer |
-
-## Integration Examples
-
-### Vim Text Objects with Operators
-
-Most powerful Vim commands combine operators with text objects:
-
-| Command | Action |
-|---------|--------|
-| `ciw` | Change inner word |
-| `diw` | Delete inner word |
-| `yi"` | Yank inside quotes |
-| `da(` | Delete around parentheses |
-| `>ip` | Indent paragraph |
-| `=i{` | Format inside braces |
-| `gUaw` | Uppercase a word |
-| `vis` | Select inner sentence |
-| `ci]` | Change inside brackets |

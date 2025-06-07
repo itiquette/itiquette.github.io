@@ -1,42 +1,55 @@
 +++
 title = 'On Translating Free Software'
-date = 2025-05-17T07:07:07+01:00
+date = 2025-06-04T07:07:07+01:00
 draft = false
 tags = ["opensource", "foss", "translation","l18n","l10n"]
 +++
 
-Translating free software is nothing new, but even in this AI-driven age, it remains relevant for several reasons. Why is that, and what are some common challenges?
+Even in our AI-driven world with easily accessible automatic translations, there is still a need for human translation and proofreading.
+Why is that, and what are the most common challenges?
 
-## Why
+## Why translate free software?
 
-Translation enables non-English speakers to access tools in their native language. This ensures that technology remains accessible regardless of linguistic background or English proficiency.
+Good translations make it possible for more people to use tools in their own language, which makes technology accessible.
 
-For those who care about language diversity or are generally interested in languages, translation is a matter of preserving linguistic identity. One of the bonds of society is having a common language. Even as it evolves over time, language forms a cohesive glue and is part of our cultural identity.
+For those who care about linguistic diversity or have a strong interest in languages, translation can be about preserving linguistic identity.
+One of the **strongest bonds** in a society is having a common language, which functions as a unifying force.
+Language is part of our cultural identity.
 
-By translating free software, contributors democratize access to digital tools and support the fundamental FOSS principle - that software should be available to everyone.
+By translating software, one makes digital tools accessible to more people and supports fundamental principles about accessibility for everyone.
 
-Additionally, it exposes the translator to the full functionality of the software. The process helps in gaining a deeper understanding of both the software and its underlying concepts.
+Additionally, the translator gains a deeper understanding of all the software's functions.
+The process helps to understand both the software and the basic principles better.
 
-Another benefit is that translation improves the translator's personal language skills.
+Translation work improves the translator's language skills.
 
-Also, AI-translations as a tool is really helpful, however, adding some human interaction and review will raise the quailty of those.
+AI translations are excellent tools, but without human review they often miss context and linguistic nuances.
 
-So, for those seeking to contribute to free software, translation offers a good entry point, requiring minimal programming knowledge.
+For those who want to start contributing to free software, translation can be a good way to get started without being able to program.
 
 ## Challenges
 
-While professional translation expertise isn't required, basic language proficiency is crucial for a good translation. Correct spelling and proper verb conjugations are non-negotiable. Poor translations can destroy software usability and user trust in the project, and even introduce bugs into the translated application.
+Even though one doesn't need to be a professional translator, basic language skills are required for a good translation.
+Correct spelling and proper grammar are absolutely necessary.
+Poor translations can destroy the software's usability and credibility, and in the worst case, cause errors in the translated version.
 
-Maintaining consistent terminology across different contexts is also essential for high-quality translations. There are several valid translations for terms, for example _(like "file" which can be "arkiv," "fil," or "arkivera" in Swedish)_.
+Maintaining consistent terminology across different contexts is also important for good quality.
 
-Translation work can become a time sink, sometimes serving as productive procrastination, as it is easy to see results and progress. Limiting translation time helps maintain balance while still contributing.
+There are often several possible translations of a word depending on the context of the same term - for example, English "file" can become "fil," "arkiv," or "dokument" in Swedish.
 
-Software continuously evolves, creating an ongoing need for updated translations. Managing this workflow can be challenging for volunteer translators.
+Translation can become a real **time thief**, sometimes as a form of productive procrastination, since it's easy to see results and progress.
+Setting limits for translation time helps maintain balance.
 
-Translating technical concepts often poses difficulties, particularly for newer technologies where established terminology might not exist. This requires creativity and linguistic sensitivity.
+Software is constantly being developed, which means translations must be updated continuously.
+Managing a constant workflow can be a challenge for volunteers.
 
-That is all, happy translating!
+Translating technical concepts is often difficult, especially for new technology where established terminology doesn't exist yet.
 
-PS Check out [Translations](/translations) for tips on how to get started!
+It requires creativity, linguistic sensitivity, and knowledge of existing language choices.
+
+---
+
+That is all, happy translating, and check out [Translations](/translations) for tips on how to get started!
+
 
 🇪🇸 Spanish | 🇬🇧 English | 🇮🇳 Hindi | 🇧🇩 Bengali | 🇵🇹 Portuguese | 🇯🇵 Japanese | 🇵🇰 Urdu | 🇫🇷 French | 🇩🇪 German | 🇹🇷 Turkish | 🇰🇷 Korean | 🇻🇳 Vietnamese | 🇹🇼 Taiwanese | 🇮🇷 Persian (Farsi) | 🇨🇳 Chinese (Mandarin) | 🇮🇹 Italian | 🇮🇩 Indonesian | 🇵🇱 Polish | 🇹🇭 Thai | 🇺🇦 Ukrainian | 🇳🇱 Dutch | 🇷🇴 Romanian | 🇸🇦 Arabic | 🇸🇪 Swedish | 🇬🇷 Greek | 🇪🇬 Egyptian Arabic | 🇭🇺 Hungarian | 🇮🇱 Hebrew | 🇵🇭 Filipino/Tagalog

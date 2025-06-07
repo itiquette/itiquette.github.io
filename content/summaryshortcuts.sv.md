@@ -9,7 +9,8 @@ hideDate = 'true'
 
 # Sammanfattad genvägsreferens
 
-Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalmultiplexers, skalmiljöer, kodredigerare, webbläsare och utvecklingsverktyg
+En sammanfattning av de mer [använda genvägarna](shortcutsall.md) för Ubuntu, terminalmultiplexers, skalmiljöer, kodredigerare, webbläsare och utvecklingsverktyg.
+Förändras löpande:)
 
 ## Innehållsförteckning
 
@@ -17,11 +18,10 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 - [Terminalmultiplexer (Zellij)](#terminalmultiplexer-zellij)
 - [Fish Shell med Vim-läge](#fish-shell-med-vim-läge)
 - [Fish Shell med fzf.fish](#fish-shell-med-fzffish)
-- [Neovim/LazyVim](#neovimlazyvimy)
+- [Neovim/LazyVim](#neovimlazyvim)
 - [VSCode med Neovim-tillägg](#vscode-med-neovim-tillägg)
 - [Webbläsarnavigering med Vimium](#webbläsarnavigering-med-vimium)
 - [Webbläsarens utvecklarverktyg](#webbläsarens-utvecklarverktyg)
-- [Integrationsexempel](#integrationsexempel)
 
 ## Systemmiljö (Ubuntu/GNOME)
 
@@ -39,7 +39,7 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `Alt+F6` | Växla fönster i samma program |
 | Ctrl+Alt+D | Visa skrivbord |
 | `Super+M` | Växla notifieringspanel |
-| `Super+L` eller `Ctrl+Alt+L` | Lås skärmen |
+| `Super+L` | Lås skärmen |
 | `Ctrl+Alt+Del` | Logga ut |
 
 ### Arbetsytans navigering
@@ -55,9 +55,23 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 |----------|--------|
 | `PrtScr` | Ta skärmdump av område |
 | `Alt+PrtScr` | Ta skärmdump av fönster |
-| `Shift+PrtScr` | Ta skärmdump |
+| `Shift+PrtScr` | Ta skärmdump av skrivbord |
 
 ## Terminalmultiplexer (Zellij)
+
+### Delade genvägar
+
+| Genväg | Åtgärd |
+|----------|--------|
+| `Ctrl+q` | Avsluta |
+| `Alt+f` | Växla flytande paneler |
+| `Alt+n` | Ny panel |
+| `Alt+h/j/k/l` | Flytta fokus vänster/ner/upp/höger |
+| `Alt+=` eller `Alt++` | Öka storlek |
+| `Alt+-` | Minska storlek |
+| `Alt+[` eller `Alt+]` | Föregående/nästa layout |
+| `Alt+i/o` | Flytta flik vänster/höger |
+| `Shift` | Håll inne för att åsidosätta Zellij mushantering |
 
 ### Lägesväxling
 
@@ -118,26 +132,12 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `j/k` eller `Ner/Upp` | Rulla ner/upp |
 | `Ctrl+f`/`Ctrl+b` eller `Page Down/Up` | Sidrullning ner/upp |
 | `d/u` | Halv sida rulla ner/upp |
-| `e` | Redigera rullningsbakåt |
+| `e` | Redigera rullningsbakåt (sättet att kopiera en listning i zellij) |
 | `s` | Gå in i sökläge |
 | `n/p` | Sök nästa/föregående |
 | `c` | Växla skiftlägeskänslighet |
 | `w` | Växla radbrytning |
 | `o` | Växla hela ord |
-
-### Delade genvägar
-
-| Genväg | Åtgärd |
-|----------|--------|
-| `Ctrl+q` | Avsluta |
-| `Alt+f` | Växla flytande paneler |
-| `Alt+n` | Ny panel |
-| `Alt+h/j/k/l` | Flytta fokus vänster/ner/upp/höger |
-| `Alt+=` eller `Alt++` | Öka storlek |
-| `Alt+-` | Minska storlek |
-| `Alt+[/]` | Föregående/nästa layout |
-| `Alt+i/o` | Flytta flik vänster/höger |
-| `Shift` | Håll inne för att åsidosätta Zellij mushantering |
 
 ## Fish Shell med Vim-läge
 
@@ -180,25 +180,15 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `x` | Ta bort tecken |
 | `~` | Ändra skiftläge |
 
-### Sökning och historik
-
-| Genväg | Åtgärd |
-|----------|--------|
-| `/mönster` | Sök framåt |
-| `?mönster` | Sök bakåt |
-| `n/N` | Nästa/föregående sökresultat |
-| `*/#` | Sök efter ord under markören framåt/bakåt |
-
 ### Kommandohistorik (standardläge)
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `Ctrl+p` eller `Upp` | Föregående kommando |
-| `Ctrl+n` eller `Ner` | Nästa kommando |
+| `k` | Föregående kommando |
+| `j` | Nästa kommando |
 | `Ctrl+r` | Baklängessökning genom historik |
-| `Alt+.` | Infoga sista argumentet från föregående kommando |
 
-### Radredigering (standardläge)
+### Radredigering (Emacs-läge)
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -210,7 +200,6 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `Ctrl+k` | Ta bort från markör till radens slut |
 | `Ctrl+w` | Ta bort föregående ord |
 | `Alt+d` | Ta bort nästa ord |
-| `Ctrl+t` | Byt plats på två tecken |
 | `Alt+t` | Byt plats på två ord |
 | `Ctrl+l` | Rensa skärm |
 | `Ctrl+c` | Avbryt kommando |
@@ -222,29 +211,22 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd | Beskrivning |
 |----------|--------|-------------|
-| `Ctrl+Alt+F` | Sök katalog | Hitta filer i aktuell katalog |
-| `Ctrl+Alt+L` | Sök Git-logg | Bläddra och infoga commit-hash |
-| `Ctrl+Alt+S` | Sök Git-status | Hitta modifierade/stage:ade/oövervakade filer |
-| `Ctrl+R` | Sök historik | Hitta kommandon i skalhistoriken |
-| `Ctrl+Alt+P` | Sök processer | Hitta och infoga process-ID |
-| `Ctrl+V` | Sök variabler | Hitta och infoga skalvariabler |
+| `Ctrl+Alt+f/F` | Sök katalog | Hitta filer i aktuell katalog |
+| `Ctrl+Alt+l` | Sök Git-logg | Bläddra och infoga commit-hash |
+| `Ctrl+Alt+s` | Sök Git-status | Hitta modifierade/stage:ade/oövervakade filer |
+| `Ctrl+s` | Sök historik | Hitta kommandon i skalhistoriken |
+| `Ctrl+Alt+p` | Sök processer | Hitta och infoga process-ID |
+| `Ctrl+v` | Sök variabler | Hitta och infoga skalvariabler |
 
 ### fzf-navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `↑/↓` eller `Ctrl+p/n` | Navigera upp/ner |
+| `Ctrl+k/j` | Navigera upp/ner |
 | `Enter` | Välj objekt |
 | `Tab` | Välj flera objekt |
 | `Shift+Tab` | Avmarkera objekt |
-| `Ctrl+Space` | Växla markering |
-| `Alt+Enter` | Välj alla träffar |
 | `Esc` eller `Ctrl+g` | Avbryt |
-| `?` | Växla förhandsgranskningsfönster |
-| `Alt+↑/↓` | Rulla förhandsgranskningsfönster |
-| `Ctrl+/` | Växla hjälp |
-| `Ctrl+r` | Växla sortering |
-| `Alt+w` | Växla förhandsgranskningsradbrytning |
 
 ## Neovim/LazyVim
 
@@ -270,8 +252,7 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `tx/Tx` | Flytta till före nästa/föregående 'x' |
 | `;/,` | Upprepa senaste f/F/t/T framåt/bakåt |
 | `%` | Hoppa till matchande klammerparentes |
-| `[(/])` | Hoppa till föregående/nästa '(' |
-| `[{/]}` | Hoppa till föregående/nästa '{' |
+| `yl` | Kopiera ett tecken |
 
 ### Redigering
 
@@ -281,7 +262,6 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `a/A` | Infoga efter markör/vid radens slut |
 | `o/O` | Öppna rad nedan/ovanför |
 | `r/R` | Ersätt tecken/gå in i ersättningsläge |
-| `s/S` | Ersätt tecken/rad |
 | `c{rörelse}` | Ändra text |
 | `cc` | Ändra rad |
 | `C` | Ändra till radens slut |
@@ -297,8 +277,9 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `.` | Upprepa senaste ändring |
 | `~` | Växla skiftläge |
 | `g~/gu/gU` | Växla/gör litet/gör stort skiftläge |
-| `=` | Automatisk indentering |
-| `>/<` | Öka/minska indentering |
+| `==` | Auto-indentera aktuell rad |
+| `=G` | Auto-indentera från markör till slutet av fil |
+| `gg=G` | Auto-indentera hela filen (gå till toppen, sedan indentera till slutet) |
 
 ### Textobjekt
 
@@ -322,12 +303,9 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 |----------|--------|
 | `v/V/Ctrl+v` | Starta tecken/rad/block-markering |
 | `o/O` | Flytta till andra änden av markering/annat hörn |
-| `gv` | Markera senaste visuella markeringen igen |
-| `>/<` | Öka/minska indentering för markering |
 | `=` | Auto-indentera markering |
 | `y/d/c/x` | Kopiera/ta bort/ändra/ta bort markering |
 | `u/U` | Ändra markering till gemener/versaler |
-| `~` | Växla skiftläge för markering |
 | `I/A` | Infoga i början/slutet av alla markerade rader (i blockläge) |
 
 ### Sök och ersätt
@@ -350,7 +328,6 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `m{a-zA-Z}` | Sätt markör |
 | `` `{markör} `` | Hoppa till markörposition |
 | `'{markör}` | Hoppa till markörrad |
-| `` `" `` | Hoppa till position före senaste avslut |
 | `` `. `` | Hoppa till position för senaste ändring |
 | `Ctrl+o/i` | Gå till äldre/nyare position i hopplistan |
 | `g;/g,` | Gå till äldre/nyare position i ändringslistan |
@@ -359,18 +336,14 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `Ctrl+w s` | Dela fönster horisontellt |
 | `Ctrl+w v` | Dela fönster vertikalt |
+| `Ctrl+w s` | Dela fönster horisontellt |
 | `Ctrl+w q` | Stäng fönster |
 | `Ctrl+w o` | Stäng alla fönster utom aktuellt |
 | `Ctrl+w h/j/k/l` | Flytta till vänster/ner/upp/höger fönster |
 | `Ctrl+w H/J/K/L` | Flytta fönster vänster/ner/upp/höger |
 | `Ctrl+w r/R` | Rotera fönster ner/upp |
-| `Ctrl+w +/-` | Öka/minska höjd |
-| `Ctrl+w >/<` | Öka/minska bredd |
 | `Ctrl+w =` | Lika dimensioner för alla fönster |
-| `Ctrl+w _` | Maximera höjd |
-| `Ctrl+w |` | Maximera bredd |
 | `Ctrl+w T` | Flytta fönster till ny flik |
 
 ### Flikhantering
@@ -412,8 +385,8 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `K` | Visa hovringsdokumentation |
 | `gK` | Visa signaturhjälp |
 | `<leader>ca` | Kodåtgärd |
-| `<leader>cr` | Byt namn på symbol |
 | `<leader>cf` | Formatera kod |
+| `<leader>cr` | Byt namn på symbol |
 | `<leader>cd` | Raddiagnostik |
 | `]d/[d` | Nästa/föregående diagnostik |
 | `]e/[e` | Nästa/föregående fel |
@@ -429,8 +402,8 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `<leader>fr` | Senaste filer |
 | `<leader>/` | Grep i filer |
 | `<leader>sg` | Grep i filer |
-| `<leader>sw` | Sök ord under markör |
 | `<leader>ss` | Gå till symbol |
+| `<leader>sw` | Sök ord under markör |
 
 ### Git-integration (LazyVim)
 
@@ -503,32 +476,23 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `=/==` | Formatera markering/rad |
-| `<leader>ca` | Kodåtgärder |
-| `<leader>cr` | Byt namn på symbol |
-| `<leader>cf` | Formatera fil |
+| `Ctrl+.` | Kodåtgärder |
+| `F2` | Byt namn på symbol |
+| `Shift+Alt+F` | Formatera fil |
 
-### Flera markörer
-
-| Genväg | Åtgärd |
-|----------|--------|
-| Visuell rad + `ma/mA` | Lägg till markör i slutet av varje rad |
-| Visuell rad + `mi/mI` | Lägg till markör i början av varje rad |
-| Visuellt block + `ma` | Lägg till markör efter block |
-| Visuellt block + `mi` | Lägg till markör före block |
-
-### Utforskarnavigering
+### Vim-genvägsalternativ till multi-cursor
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `j/k` | Flytta upp/ner |
-| `h/l` | Fäll ihop/expandera |
-| `Enter` | Öppna fil |
-| `o` | Växla expandering |
-| `a/A` | Ny fil/mapp |
-| `r` | Byt namn |
-| `d` | Ta bort |
-| `y/x/p` | Kopiera/klipp/klistra |
+| `*` | Sök efter ord under markören |
+| `cgn` | Ändra nästa förekomst |
+| `.` | Upprepa senaste ändring |
+| `n` | Hoppa till nästa förekomst |
+| `N` | Hoppa till föregående förekomst |
+| `:%s/gammal/ny/gc` | Global sök och ersätt med bekräftelse |
+| `:%s/gammal/ny/g` | Global sök och ersätt (ingen bekräftelse) |
+| `/mönster` | Sök efter mönster |
+| `?mönster` | Sök bakåt efter mönster |
 
 ### VSCode-nativa funktioner
 
@@ -538,14 +502,33 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `F9` | Växla brytpunkt |
 | `F10` | Stega över |
 | `F11/Shift+F11` | Stega in/ut |
-| `Ctrl+`` | Växla terminal |
+| `Ctrl+Shift+`` | Växla terminal |
 | `Ctrl+Shift+E` | Visa utforskaren |
 | `Ctrl+Shift+G` | Visa källkontroll |
 | `Ctrl+Shift+D` | Visa felsökningspanel |
 | `Ctrl+Shift+X` | Visa tillägg |
 | `Ctrl+P` | Snabböppna filer |
 | `Ctrl+Shift+P` | Visa kommandopalett |
-| `Ctrl+K Ctrl+Z` | Zen-läge |
+
+### Utforskarnavigering
+
+| Genväg | Åtgärd |
+|----------|--------|
+| `j/k` | Flytta upp/ner |
+| `h/l` | Fäll ihop/expandera |
+| `Enter` | Öppna fil |
+| `Space` | Förhandsgranska fil (behåll fokus i utforskaren) |
+| `a/A` | Ny fil/mapp |
+| `r` | Byt namn |
+| `d` | Ta bort |
+| `y/x/p` | Kopiera/klipp/klistra |
+
+### Allmän panelnavigering
+
+| Genväg | Åtgärd |
+|----------|--------|
+| `Ctrl+0` | Fokusera på sidofältet |
+| `Ctrl+1` | Fokusera tillbaka till editorn |
 
 ## Webbläsarnavigering med Vimium
 
@@ -574,11 +557,10 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `J/K` eller `gT/gt` | Gå till föregående/nästa flik |
-| `g0/g$` | Gå till första/sista fliken |
-| `t` | Skapa ny flik |
-| `x/X` | Stäng flik/återställ stängd flik |
-| `^` | Gå till tidigare besökt flik |
+| `Ctrl+Tab` / `Ctrl+Shift+Tab` | Gå till föregående/nästa flik |
+| `g0/g$` eller `Alt+9` | Gå till första/sista fliken |
+| `Ctrl+t` | Skapa ny flik |
+| `Ctrl+W` | Stäng flik |
 | `T` | Sök flikar |
 
 ### Historiknavigering
@@ -617,8 +599,8 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `Ctrl+Shift+I` eller `F12` | Öppna utvecklarverktyg |
-| `Ctrl+Shift+J` | Öppna konsol |
+| `Ctrl+Shift+I` | Växla utvecklarverktyg |
+| `Ctrl+Shift+K` | Konsol |
 | `Ctrl+Shift+C` | Inspektera element |
 | `Ctrl+]` / `Ctrl+[` | Navigera framåt/bakåt i panelhistorik |
 | `Ctrl+Shift+M` | Växla enhetsläge |
@@ -631,7 +613,6 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `F10` eller `Ctrl+'` | Stega över |
 | `F11` eller `Ctrl+;` | Stega in |
 | `Shift+F11` eller `Ctrl+Shift+;` | Stega ut |
-| `Ctrl+F8` | Inaktivera alla brytpunkter |
 
 ### Konsol
 
@@ -640,23 +621,4 @@ Detta sammanställer [viktiga genvägar](shortcutsall.md) för Ubuntu, terminalm
 | `Ctrl+L` | Rensa konsol |
 | `Upp/Ner` | Navigera kommandohistorik |
 | `Shift+Enter` | Flerradig inmatning |
-| `Ctrl+F` | Sök konsolhistorik |
 | `Esc` | Växla konsollåda |
-
-## Integrationsexempel
-
-### Vim-textobjekt med operatorer
-
-De mest kraftfulla Vim-kommandona kombinerar operatorer med textobjekt:
-
-| Kommando | Åtgärd |
-|---------|--------|
-| `ciw` | Ändra inre ord |
-| `diw` | Ta bort inre ord |
-| `yi"` | Kopiera inuti citattecken |
-| `da(` | Ta bort runt parenteser |
-| `>ip` | Indentera stycke |
-| `=i{` | Formatera inuti klammerparenteser |
-| `gUaw` | Versaler för ett ord |
-| `vis` | Markera inre mening |
-| `ci]` | Ändra inuti hakparenteser |

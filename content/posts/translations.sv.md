@@ -1,43 +1,52 @@
 +++
 title = 'Om översättning av fri programvara'
-date = 2025-05-17T07:07:07+01:00
+date = 2025-06-04T07:07:07+01:00
 draft = false
 tags = ["opensource", "foss", "translation","l18n","l10n"]
 +++
 
-Att översätta fri programvara är inget nytt, men även i denna AI-drivna tidsålder är det relevant av flera skäl. Vilka skäl då, och vad är några vanliga utmaningar?
+Även i vår AI-präglade värld med lättilgängliga automatöversättningar finns det fortfarande ett behov av mänsklig översättning och korrekturläsning.
+Varför då, och vilka är de vanligaste utmaningarna?
 
-## Varför översätta?
+## Varför översätta fri programvara?
 
-Översättning gör det möjligt för icke-engelsktalande att få tillgång till verktyg på sitt modersmål. Det gör att tekniken blir tillgänglig, oavsett språklig bakgrund eller kunskaper i engelska.
+Bra översättningar gör det möjligt för flera att använda verktygen på sitt eget språk, vilket gör tekniken tillgänglig.
 
-För dem som bryr sig om språklig mångfald eller är allmänt intresserade av språk, är översättningar en fråga om att bevara en språklig identitet. Ett av samhällets band är att ha ett gemensamt språk. Även när det utvecklas över tid utgör språket ett sammanhållande kitt och är en del av vår kulturella identitet.
+För dem som värnar om språklig mångfald eller som har ett starkt språkintresse så kan en översättning handla om att bevara den språkliga identiteten.
+Ett av de starkaste banden i ett samhälle är att ha ett gemensamt språk, där fungerar som en sammanhållande kraft.
+Språket är en del av vår kulturella identitet.
 
-Genom att översätta fri programvara demokratiserar bidragsgivare tillgången till digitala verktyg och stödjer den grundläggande FOSS-principen - att programvara bör vara tillgänglig för alla.
+Genom att översätta programvara gör man digitala verktyg tillgängliga för flera och stödjer grundläggande principer om tillgänglighet för alla.
 
-Dessutom exponerar det översättaren för programvarans hela funktionalitet. Processen hjälper till att få en djupare förståelse för både programvaran och dess underliggande koncept.
+Dessutom får översättaren en djupare förståelse för en programvaras alla funktioner.
+Processen hjälper till att förstå både programvaran och grundprinciperna bättre.
 
-En annan fördel är att översättning förbättrar översättarens personliga språkkunskaper.
+Översättningsarbetet förbättrar översättarens språkkunskaper.
 
-En annan fördel att AI-översatta översättningar kan förbättras och trimmas, AI i all ära som hjälpverktyg, men utan en mänsklig granskning missar AI ibland kontext eller språknyanser.
+AI-översättningar är ett utmärkta hjälpverktyg, men utan en mänsklig granskning missar de ofta sammanhang och språknyanser.
 
-Så för den som vill börja bidra till fri programvara är översättandet en bra ingångspunkt som inte kräver programmeringskunskap.
+För den som vill börja bidra till fri programvara kan översättning vara ett bra sätt att komma igång på utan att kunna programmera.
 
 ## Utmaningar
 
-Även om professionell översättningsexpertis inte krävs, är grundläggande språkfärdigheter avgörande för en bra översättning. Korrekt stavning och riktig verbböjning är icke-förhandlingsbart. Dåliga översättningar kan förstöra programvarans användbarhet och förtroende, och till och med införa programfel i den översatta applikationen.
+Även om man inte behöver vara professionell översättare krävs grundläggande språkkunskaper för en bra översättning.
+Korrekt stavning och rätt grammatik är absolut nödvändigt.
+Dåliga översättningar kan förstöra programvarans användbarhet och trovärdighet, och i värsta fall, orsaka fel i den översatta versionen.
 
-Att upprätthålla konsekvent terminologi genom olika sammanhang och kontext är också väsentligt för översättningar av hög kvalitet. Det finns flera giltiga översättningar för termer, exempel _(som "file" vilket kan vara "arkiv," "fil," eller "arkivera" på svenska)_.
+Att hålla en konsekvent terminologi genom olika sammanhang är också viktigt för god kvalitet.
+Det finns ofta flera möjliga översättningar av ett ord beroende på sammanhang av samma term - exempelvis kan engelskans "file" bli "fil", "arkiv" eller "dokument" på svenska.
 
-Översättningsarbete kan bli en tidstjuv, ibland som en form av produktiv prokrastinering, eftersom det är lätt att se resultat och framsteg. Att begränsa översättningstiden hjälper till att upprätthålla balansen, samtidigt som man fortfarande bidrar.
+Översättning kan bli en riktig tidstjuv, ibland som en form av produktiv förhalning, eftersom det är lätt att se resultat och framsteg.
+Att sätta gränser för översättningstiden hjälper till att hålla balansen.
 
-Programvara utvecklas kontinuerligt, vilket skapar ett kontinuerligt behov av uppdaterade översättningar. Att hantera detta arbetsflöde kan vara utmanande för frivilliga översättare.
+Programvara utvecklas ständigt, vilket innebär att översättningarna måste uppdateras kontinuerligt.
+Att hantera ett konstant arbetsflöde kan vara en utmaning för frivilliga.
 
-Att översätta tekniska koncept medför ofta svårigheter, särskilt för nyare teknologier där etablerad terminologi kanske inte existerar. Detta kräver kreativitet och språklig känslighet.
+Att översätta tekniska begrepp är ofta svårt, särskilt för ny teknik, där det inte finns en etablerad terminologi än.
+Det kräver kreativitet, språkkänsla och en kännedom om befintliga språkval.
 
-Det var allt, glad översättningstund!
+---
 
-PS Kolla in [Översättningar](/translations) för tips om hur du kommer igång!
+Ha en glad översättarstund, och kolla in [Översättningar](/translations) för konkreta tips om hur du kommer igång!
 
 🇪🇸 Spanska | 🇬🇧 Engelska | 🇮🇳 Hindi | 🇧🇩 Bengali | 🇵🇹 Portugisiska | 🇯🇵 Japanska | 🇵🇰 Urdu | 🇫🇷 Franska | 🇩🇪 Tyska | 🇹🇷 Turkiska | 🇰🇷 Koreanska | 🇻🇳 Vietnamesiska | 🇹🇼 Taiwanesiska | 🇮🇷 Persiska (Farsi) | 🇨🇳 Kinesiska (Mandarin) | 🇮🇹 Italienska | 🇮🇩 Indonesiska | 🇵🇱 Polska | 🇹🇭 Thai | 🇺🇦 Ukrainska | 🇳🇱 Nederländska | 🇷🇴 Rumänska | 🇸🇦 Arabiska | 🇸🇪 Svenska | 🇬🇷 Grekiska | 🇪🇬 Egyptisk arabiska | 🇭🇺 Ungerska | 🇮🇱 Hebreiska | 🇵🇭 Filippinska/Tagalog
-

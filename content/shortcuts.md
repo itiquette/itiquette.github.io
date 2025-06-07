@@ -8,11 +8,11 @@ slug = 'shortcuts'
 
 I constantly try to improve my workflow. Not for speed, but to avoid thinking so much about how to do things and instead focus on the problem I'm solving. I prefer Vim motions and a mix of CLI tooling and IDEs.
 
+The condensed version of the most important ones
 
-My Developer Tools Keyboard Shortcuts Guide
+- [Condensed Shortcut Reference](summaryshortcuts.md)
 
 The long version
+
 - [Linux and Developer Tools Keyboard Shortcuts Guide](shortcutsall.md)
 
-The condensed useable version of the most important ones
-- [Condensed Shortcut Reference](summaryshortcuts.md)
