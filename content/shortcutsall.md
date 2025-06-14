@@ -8,20 +8,19 @@ slug = 'shortcutsall'
 
 # Linux and Developer Tools Keyboard Shortcuts Guide
 
-## Table of Contents
-- [Essential Ubuntu (Gnome) Keyboard Shortcuts](#essential-ubuntu-gnome-keyboard-shortcuts)
-- [Zellij](#zellij-keyboard-shortcuts)
-- [Vim Mode in Fish Shell](#vim-mode-in-fish-shell)
-- [Default Mode in Fish Shell](#default-mode-in-fish-shell)
-- [Browsers](#browser-keyboard-shortcuts)
-- [Vimium Browser Extension Shortcuts](#vimium-browser-extension-shortcuts)
-- [VS Code](#vs-code-keyboard-shortcuts)
-- [NeoVim](#neovim-keyboard-shortcuts)
-- [LazyVim](#lazyvim-keyboard-shortcuts)
-- [Fish Shell](#fish-shell-fzffish-shortcuts)
-- [VSCode Neovim Extension](#vscode-neovim-integration)
+- [Ubuntu[Gnome]](#ubuntu)
+- [Zellij](#zellij)
+- [Fish Shell (Vim-läge)](#fish-shell-vim)
+- [Fish Shell (Standard-läge)](#fish-shell-standard)
+- [Fish Shell (fzf.fish)](#fish-shell-fzf)
+- [NeoVim](#neovim)
+- [LazyVim](#lazyvim)
+- [VSCode Neovim](#vscode-neovim)
+- [VSCode](#vscode)
+- [Webbläsare](#webbläsare)
+- [Webbläsare Vimium](#webbläsare-vimium)
 
-## Essential Ubuntu (Gnome) Keyboard Shortcuts
+## Ubuntu
 
 | Shortcut | Action |
 |----------|--------|
@@ -32,10 +31,8 @@ slug = 'shortcutsall'
 | `Super+Left/Right/Up/Down` | Snap window left/right/maximize/unmaximize |
 | `Alt+Tab` (Alt+Shift+Tab) | Switch application window |
 | `Super+Tab` (Super+Shift+Tab) | Switch application group|
-| `Ctrl+Alt+Tab` | Switch between windows in all Workspaces (unsure about this one todo) |
-| `Ctrl+Alt+Up/Down/Left/Right` | Switch workspace |
 | `Alt+F6` | Quick switch windows of the same application |
-| Ctrl+Alt+D` | Show desktop (press again to restore windows) |
+| `Ctrl+Alt+D` | Show desktop (press again to restore windows) |
 | `Super+M` | Toggle notification tray |
 | `Ctrl+Alt+L` | Lock screen |
 | `Ctrl+Alt+Del` | Log out |
@@ -46,29 +43,27 @@ slug = 'shortcutsall'
 | `Alt+PrtScr` | Take screenshot of window |
 | `Shift+PrtScr` | Take screenshot of area |
 
-> 📋 Note: Capital letters in shortcuts don't mean you press the Shift key. For example, T means 't' key only, not Shift+t.
-
-### Custom Keyboard Shortcuts
 Create your own shortcuts by going to:
 Settings → Devices → Keyboard → Custom Shortcuts
 
-Sources:
 - https://itsfoss.com/ubuntu-shortcuts/
 
-## Zellij Keyboard Shortcuts
+## Zellij
 
-### Locked Mode
+### Zellij locked mode
+
+Normal mode is the default mode in Zellij.
+At times, you might need to bypass keyboard bindings.
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl g` | Switch to Normal mode |
 
-### Normal Mode
-Normal mode is the default mode in Zellij.
+### Zellij Resize Mode
 
-### Resize Mode
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl n` | Switch to Normal mode |
+| `Ctrl n` | Toogle Normal mode/Rezise mode |
 | `h` / `←` | Increase size left |
 | `j` / `↓` | Increase size down |
 | `k` / `↑` | Increase size up |
@@ -80,7 +75,8 @@ Normal mode is the default mode in Zellij.
 | `=` / `+` | Increase size |
 | `-` | Decrease size |
 
-### Pane Mode
+### Zellij Pane Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl p` | Switch to Normal mode |
@@ -100,7 +96,8 @@ Normal mode is the default mode in Zellij.
 | `c` | Switch to RenamePane mode with pane name input |
 | `i` | Toggle pane pinned and switch to Normal mode |
 
-### Move Mode
+### Zellij Move Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl h` | Switch to Normal mode |
@@ -111,7 +108,8 @@ Normal mode is the default mode in Zellij.
 | `k` / `↑` | Move pane up |
 | `l` / `→` | Move pane right |
 
-### Tab Mode
+### Zellij Tab Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl t` | Switch to Normal mode |
@@ -127,7 +125,8 @@ Normal mode is the default mode in Zellij.
 | `1`-`9` | Go to tab 1-9 and switch to Normal mode |
 | `Tab` | Toggle tab |
 
-### Scroll Mode
+### Zellij Scroll Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl s` | Switch to Normal mode |
@@ -141,7 +140,8 @@ Normal mode is the default mode in Zellij.
 | `d` | Half page scroll down |
 | `u` | Half page scroll up |
 
-### Search Mode
+### Zellij Search Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl s` | Switch to Normal mode |
@@ -158,25 +158,29 @@ Normal mode is the default mode in Zellij.
 | `w` | Toggle wrap option |
 | `o` | Toggle whole word option |
 
-### EnterSearch Mode
+### Zellij EnterSearch Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl c` / `Esc` | Switch to Scroll mode |
 | `Enter` | Switch to Search mode |
 
-### RenameTab Mode
+### Zellij RenameTab Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl c` | Switch to Normal mode |
 | `Esc` | Undo rename tab and switch to Tab mode |
 
-### RenamePane Mode
+### Zellij RenamePane Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl c` | Switch to Normal mode |
 | `Esc` | Undo rename pane and switch to Pane mode |
 
-### Session Mode
+### Zellij Session Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl o` | Switch to Normal mode |
@@ -187,7 +191,8 @@ Normal mode is the default mode in Zellij.
 | `p` | Launch or focus plugin manager and switch to Normal mode |
 | `a` | Launch or focus about plugin and switch to Normal mode |
 
-### Tmux Mode
+### Zellij Tmux Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `[` | Switch to Scroll mode |
@@ -208,7 +213,8 @@ Normal mode is the default mode in Zellij.
 | `Space` | Next swap layout |
 | `x` | Close focus and switch to Normal mode |
 
-### Shared Shortcuts
+### Zellij Shared Shortcuts
+
 | Shortcut | Action | Available In |
 |----------|--------|-------------|
 | `Ctrl g` | Switch to Locked mode | All except Locked |
@@ -227,7 +233,8 @@ Normal mode is the default mode in Zellij.
 | `Alt ]` | Next swap layout | All except Locked |
 | `Enter` / `Esc` | Switch to Normal mode | All except Normal and Locked |
 
-### Mode Switching Shortcuts
+### Zellij Mode Switching Shortcuts
+
 | Shortcut | Action | Available In |
 |----------|--------|-------------|
 | `Ctrl p` | Switch to Pane mode | All except Pane and Locked |
@@ -241,9 +248,10 @@ Normal mode is the default mode in Zellij.
 Source:
 - https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/config/default.kdl
 
-## Vim Mode in Fish Shell
+## Fish Shell Vim
 
 ### Essential Shortcuts
+
 | Shortcut | Action |
 |----------|--------|
 | `Escape` | Switch to normal (command) mode |
@@ -269,9 +277,8 @@ Source:
 Source:
 - Fish shell documentation (fish_vi_key_bindings)
 
-## Default Mode in Fish Shell
+## Fish Shell Default
 
-### Navigation & History
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+A` | Move to beginning of line |
@@ -282,10 +289,6 @@ Source:
 | `Ctrl+N` or `↓` | Next command in history |
 | `Ctrl+R` | Reverse search through history |
 | `Alt+.` | Insert last argument of previous command |
-
-### Editing
-| Shortcut | Action |
-|----------|--------|
 | `Ctrl+U` | Delete from cursor to beginning of line |
 | `Ctrl+K` | Delete from cursor to end of line |
 | `Ctrl+W` | Delete previous word |
@@ -294,7 +297,8 @@ Source:
 | `Alt+T` | Swap two words |
 | `Ctrl+L` | Clear screen |
 
-### Command Control
+### Fish Shell Command Control
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+C` | Cancel current command |
@@ -306,9 +310,10 @@ Source:
 Source:
 - Fish shell documentation (default key bindings)
 
-## Browser Keyboard Shortcuts
+## Browser
 
-### Navigation
+### Browser Navigation
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+L` or `F6` | Focus on address bar |
@@ -327,7 +332,8 @@ Source:
 | `Ctrl+F5` or `Shift+F5` | Reload page (bypass cache) |
 | `Esc` | Stop loading page |
 
-### Viewing and Reading
+### Browser Viewing and Reading
+
 | Shortcut | Action |
 |----------|--------|
 | `F11` | Toggle full screen |
@@ -347,7 +353,8 @@ Source:
 | `Ctrl+H` | View history |
 | `Ctrl+J` | View downloads |
 
-### Editing
+### Browser Editing
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+C` | Copy selected text |
@@ -357,7 +364,8 @@ Source:
 | `Ctrl+Y` or `Ctrl+Shift+Z` | Redo |
 | `Ctrl+A` | Select all |
 
-### Miscellaneous
+### Browser Miscellaneous
+
 | Shortcut | Action |
 |----------|--------|
 | `Alt+F` or `F10` | Open browser menu |
@@ -371,7 +379,8 @@ Source:
 | `Ctrl+P` | Print page |
 | `Ctrl+S` | Save page |
 
-### Developer Tools
+### Browser Developer Tools
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+Shift+I` or `F12` | Open developer tools |
@@ -386,9 +395,10 @@ Source:
 Source:
 - Common browser shortcuts (Chrome, Firefox, Edge)
 
-## Vimium Browser Extension Shortcuts
+## Browser Vimium 
 
-### Basic Navigation
+### Browser Vimium  Basic Navigation
+
 | Shortcut | Action |
 |----------|--------|
 | `?` | Show help (all commands) |
@@ -408,405 +418,29 @@ Source:
 | `p` | Open the clipboard's URL in the current tab |
 | `P` | Open the clipboard's URL in a new tab |
 
-### Tabs Management
+### Browser Vimium Tabs Management
+
 | Shortcut | Action |
 |----------|--------|
 | `J` or `gT` | Go to the previous tab |
 | `K` or `gt` | Go to the next tab |
 | `g0` | Go to the first tab |
-| `g# Linux and Developer Tools Keyboard Shortcuts Guide
-
-## Table of Contents
-- [Essential Ubuntu (Gnome) Keyboard Shortcuts](#essential-ubuntu-gnome-keyboard-shortcuts)
-- [Zellij Keyboard Shortcuts](#zellij-keyboard-shortcuts)
-- [Vim Mode in Fish Shell](#vim-mode-in-fish-shell)
-- [Default Mode in Fish Shell](#default-mode-in-fish-shell)
-- [Browser Keyboard Shortcuts](#browser-keyboard-shortcuts)
-- [Vimium Browser Extension Shortcuts](#vimium-browser-extension-shortcuts)
-- [VS Code Keyboard Shortcuts](#vs-code-keyboard-shortcuts)
-- [NeoVim Keyboard Shortcuts](#neovim-keyboard-shortcuts)
-- [LazyVim Keyboard Shortcuts](#lazyvim-keyboard-shortcuts)
-- [Fish Shell fzf.fish Shortcuts](#fish-shell-fzffish-shortcuts)
-- [VSCode Neovim Integration](#vscode-neovim-integration)
-
-## Essential Ubuntu (Gnome) Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Super` | Opens Activities search |
-| `Ctrl+Alt+T` | Open terminal window |
-| `Super+L` or `Ctrl+Alt+L` | Lock screen |
-| `Super+D` or `Ctrl+Alt+D` | Show desktop (press again to restore windows) |
-| `Super+A` | Show application menu (9 dots grid) |
-| `Super+Tab` or `Alt+Tab` | Switch between running applications |
-| `Super+Shift+Tab` | Cycle in reverse order |
-| `Super+` ` | Switch between multiple instances of the same application |
-| `Ctrl+Alt+Tab` | Switch between windows in all Workspaces |
-| `Super+←` | Snap window to left half of screen |
-| `Super+→` | Snap window to right half of screen |
-| `Super+↑` | Maximize window |
-| `Super+↓` | Restore window to original size |
-| `Super+M` or `Super+V` | Toggle notification tray |
-| `Super+Space` | Change input keyboard |
-| `Alt+F2` | Run console (command prompt) |
-| `Ctrl+Q` or `Ctrl+W` or `Alt+F4` | Close application window |
-| `Ctrl+Alt+↑/←/→/↓` | Move between workspaces |
-| `Ctrl+Alt+Del` | Log out |
-
-> 📋 Note: Capital letters in shortcuts don't mean you press the Shift key. For example, T means 't' key only, not Shift+t.
-
-### Custom Keyboard Shortcuts
-Create your own shortcuts by going to:
-Settings → Devices → Keyboard → Custom Shortcuts
-
-Sources:
-- https://itsfoss.com/ubuntu-shortcuts/
-
-## Zellij Keyboard Shortcuts
-
-### Locked Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl g` | Switch to Normal mode |
-
-### Normal Mode
-Normal mode is the default mode in Zellij.
-
-### Resize Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl n` | Switch to Normal mode |
-| `h` / `←` | Increase size left |
-| `j` / `↓` | Increase size down |
-| `k` / `↑` | Increase size up |
-| `l` / `→` | Increase size right |
-| `H` | Decrease size left |
-| `J` | Decrease size down |
-| `K` | Decrease size up |
-| `L` | Decrease size right |
-| `=` / `+` | Increase size |
-| `-` | Decrease size |
-
-### Pane Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl p` | Switch to Normal mode |
-| `h` / `←` | Move focus left |
-| `l` / `→` | Move focus right |
-| `j` / `↓` | Move focus down |
-| `k` / `↑` | Move focus up |
-| `p` | Switch focus |
-| `n` | New pane and switch to Normal mode |
-| `d` | New pane downward and switch to Normal mode |
-| `r` | New pane rightward and switch to Normal mode |
-| `x` | Close focused pane and switch to Normal mode |
-| `f` | Toggle fullscreen for focused pane and switch to Normal mode |
-| `z` | Toggle pane frames and switch to Normal mode |
-| `w` | Toggle floating panes and switch to Normal mode |
-| `e` | Toggle pane embed/floating and switch to Normal mode |
-| `c` | Switch to RenamePane mode with pane name input |
-| `i` | Toggle pane pinned and switch to Normal mode |
-
-### Move Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl h` | Switch to Normal mode |
-| `n` / `Tab` | Move pane |
-| `p` | Move pane backwards |
-| `h` / `←` | Move pane left |
-| `j` / `↓` | Move pane down |
-| `k` / `↑` | Move pane up |
-| `l` / `→` | Move pane right |
-
-### Tab Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl t` | Switch to Normal mode |
-| `r` | Switch to RenameTab mode with tab name input |
-| `h` / `←` / `↑` / `k` | Go to previous tab |
-| `l` / `→` / `↓` / `j` | Go to next tab |
-| `n` | New tab and switch to Normal mode |
-| `x` | Close tab and switch to Normal mode |
-| `s` | Toggle active sync tab and switch to Normal mode |
-| `b` | Break pane and switch to Normal mode |
-| `]` | Break pane right and switch to Normal mode |
-| `[` | Break pane left and switch to Normal mode |
-| `1`-`9` | Go to tab 1-9 and switch to Normal mode |
-| `Tab` | Toggle tab |
-
-### Scroll Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl s` | Switch to Normal mode |
-| `e` | Edit scrollback and switch to Normal mode |
-| `s` | Switch to EnterSearch mode with search input |
-| `Ctrl c` | Scroll to bottom and switch to Normal mode |
-| `j` / `↓` | Scroll down |
-| `k` / `↑` | Scroll up |
-| `Ctrl f` / `PageDown` / `→` / `l` | Page scroll down |
-| `Ctrl b` / `PageUp` / `←` / `h` | Page scroll up |
-| `d` | Half page scroll down |
-| `u` | Half page scroll up |
-
-### Search Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl s` | Switch to Normal mode |
-| `Ctrl c` | Scroll to bottom and switch to Normal mode |
-| `j` / `↓` | Scroll down |
-| `k` / `↑` | Scroll up |
-| `Ctrl f` / `PageDown` / `→` / `l` | Page scroll down |
-| `Ctrl b` / `PageUp` / `←` / `h` | Page scroll up |
-| `d` | Half page scroll down |
-| `u` | Half page scroll up |
-| `n` | Search downward |
-| `p` | Search upward |
-| `c` | Toggle case sensitivity option |
-| `w` | Toggle wrap option |
-| `o` | Toggle whole word option |
-
-### EnterSearch Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl c` / `Esc` | Switch to Scroll mode |
-| `Enter` | Switch to Search mode |
-
-### RenameTab Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl c` | Switch to Normal mode |
-| `Esc` | Undo rename tab and switch to Tab mode |
-
-### RenamePane Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl c` | Switch to Normal mode |
-| `Esc` | Undo rename pane and switch to Pane mode |
-
-### Session Mode
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl o` | Switch to Normal mode |
-| `Ctrl s` | Switch to Scroll mode |
-| `d` | Detach |
-| `w` | Launch or focus session manager plugin and switch to Normal mode |
-| `c` | Launch or focus configuration plugin and switch to Normal mode |
-| `p` | Launch or focus plugin manager and switch to Normal mode |
-| `a` | Launch or focus about plugin and switch to Normal mode |
-
-### Tmux Mode
-| Shortcut | Action |
-|----------|--------|
-| `[` | Switch to Scroll mode |
-| `Ctrl b` | Write 2 and switch to Normal mode |
-| `"` | New pane downward and switch to Normal mode |
-| `%` | New pane rightward and switch to Normal mode |
-| `z` | Toggle fullscreen focus and switch to Normal mode |
-| `c` | New tab and switch to Normal mode |
-| `,` | Switch to RenameTab mode |
-| `p` | Go to previous tab and switch to Normal mode |
-| `n` | Go to next tab and switch to Normal mode |
-| `Left` / `h` | Move focus left and switch to Normal mode |
-| `Right` / `l` | Move focus right and switch to Normal mode |
-| `Down` / `j` | Move focus down and switch to Normal mode |
-| `Up` / `k` | Move focus up and switch to Normal mode |
-| `o` | Focus next pane |
-| `d` | Detach |
-| `Space` | Next swap layout |
-| `x` | Close focus and switch to Normal mode |
-
-### Shared Shortcuts
-| Shortcut | Action | Available In |
-|----------|--------|-------------|
-| `Ctrl g` | Switch to Locked mode | All except Locked |
-| `Ctrl q` | Quit | All except Locked |
-| `Alt f` | Toggle floating panes | All except Locked |
-| `Alt n` | New pane | All except Locked |
-| `Alt i` | Move tab left | All except Locked |
-| `Alt o` | Move tab right | All except Locked |
-| `Alt h` / `Alt ←` | Move focus or tab left | All except Locked |
-| `Alt l` / `Alt →` | Move focus or tab right | All except Locked |
-| `Alt j` / `Alt ↓` | Move focus down | All except Locked |
-| `Alt k` / `Alt ↑` | Move focus up | All except Locked |
-| `Alt =` / `Alt +` | Increase size | All except Locked |
-| `Alt -` | Decrease size | All except Locked |
-| `Alt [` | Previous swap layout | All except Locked |
-| `Alt ]` | Next swap layout | All except Locked |
-| `Enter` / `Esc` | Switch to Normal mode | All except Normal and Locked |
-
-### Mode Switching Shortcuts
-| Shortcut | Action | Available In |
-|----------|--------|-------------|
-| `Ctrl p` | Switch to Pane mode | All except Pane and Locked |
-| `Ctrl n` | Switch to Resize mode | All except Resize and Locked |
-| `Ctrl s` | Switch to Scroll mode | All except Scroll and Locked |
-| `Ctrl o` | Switch to Session mode | All except Session and Locked |
-| `Ctrl t` | Switch to Tab mode | All except Tab and Locked |
-| `Ctrl h` | Switch to Move mode | All except Move and Locked |
-| `Ctrl b` | Switch to Tmux mode | All except Tmux and Locked |
-
-Source:
-- https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/config/default.kdl
-
-## Vim Mode in Fish Shell
-
-### Essential Shortcuts
-| Shortcut | Action |
-|----------|--------|
-| `Escape` | Switch to normal (command) mode |
-| `i` | Enter insert mode |
-| `a` | Enter insert mode after cursor |
-| `A` | Enter insert mode at end of line |
-| `hjkl` | Navigate left/down/up/right |
-| `0` | Move to beginning of line |
-| `$` | Move to end of line |
-| `w` | Move forward one word |
-| `b` | Move backward one word |
-| `dd` | Delete entire line |
-| `dw` | Delete word |
-| `d$` | Delete to end of line |
-| `u` | Undo |
-| `/` | Search forward |
-| `n` | Next search result |
-| `N` | Previous search result |
-| `v` | Enter visual mode for selection |
-| `y` | Yank (copy) selected text |
-| `p` | Paste |
-
-Source:
-- Fish shell documentation (fish_vi_key_bindings)
-
-## Default Mode in Fish Shell
-
-### Navigation & History
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+A` | Move to beginning of line |
-| `Ctrl+E` | Move to end of line |
-| `Alt+F` | Move forward one word |
-| `Alt+B` | Move backward one word |
-| `Ctrl+P` or `↑` | Previous command in history |
-| `Ctrl+N` or `↓` | Next command in history |
-| `Ctrl+R` | Reverse search through history |
-| `Alt+.` | Insert last argument of previous command |
-
-### Editing
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+U` | Delete from cursor to beginning of line |
-| `Ctrl+K` | Delete from cursor to end of line |
-| `Ctrl+W` | Delete previous word |
-| `Alt+D` | Delete word forward |
-| `Ctrl+T` | Swap two characters |
-| `Alt+T` | Swap two words |
-| `Ctrl+L` | Clear screen |
-
-### Command Control
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+C` | Cancel current command |
-| `Ctrl+Z` | Suspend process |
-| `Tab` | Auto-complete |
-| `Alt+E` | Edit command in external editor |
-| `Alt+L` | List directory contents |
-
-Source:
-- Fish shell documentation (default key bindings)
-
-## Browser Keyboard Shortcuts
-
-### Navigation
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+L` or `F6` | Focus on address bar |
-| `Ctrl+T` | Open new tab |
-| `Ctrl+N` | Open new window |
-| `Ctrl+W` | Close current tab |
-| `Ctrl+Shift+T` | Reopen closed tab |
-| `Ctrl+Tab` | Switch to next tab |
-| `Ctrl+Shift+Tab` | Switch to previous tab |
-| `Ctrl+1` to `Ctrl+8` | Switch to specific tab (1st through 8th) |
-| `Ctrl+9` | Switch to the last tab |
-| `Alt+Home` | Go to homepage |
-| `Alt+←` or `Backspace` | Go back |
-| `Alt+→` or `Shift+Backspace` | Go forward |
-| `F5` | Reload page |
-| `Ctrl+F5` or `Shift+F5` | Reload page (bypass cache) |
-| `Esc` | Stop loading page |
-
-### Viewing and Reading
-| Shortcut | Action |
-|----------|--------|
-| `F11` | Toggle full screen |
-| `Ctrl+F` | Find on page |
-| `F3` or `Ctrl+G` | Find next match |
-| `Shift+F3` or `Ctrl+Shift+G` | Find previous match |
-| `Ctrl++` (plus) | Zoom in |
-| `Ctrl+-` (minus) | Zoom out |
-| `Ctrl+0` | Reset zoom to 100% |
-| `Ctrl+U` | View page source |
-| `Space` | Scroll down |
-| `Shift+Space` | Scroll up |
-| `Home` | Go to top of page |
-| `End` | Go to bottom of page |
-| `Ctrl+D` | Bookmark current page |
-| `Ctrl+Shift+D` | Bookmark all open tabs |
-| `Ctrl+H` | View history |
-| `Ctrl+J` | View downloads |
-
-### Editing
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+C` | Copy selected text |
-| `Ctrl+X` | Cut selected text |
-| `Ctrl+V` | Paste text |
-| `Ctrl+Z` | Undo |
-| `Ctrl+Y` or `Ctrl+Shift+Z` | Redo |
-| `Ctrl+A` | Select all |
-
-### Miscellaneous
-| Shortcut | Action |
-|----------|--------|
-| `Alt+F` or `F10` | Open browser menu |
-| `Ctrl+K` or `Ctrl+E` | Search from address bar |
-| `Ctrl+Enter` | Add www. and .com to text in address bar |
-| `Shift+Enter` | Add www. and .net to text in address bar |
-| `Ctrl+Shift+Enter` | Add www. and .org to text in address bar |
-| `Ctrl+Shift+Delete` | Open clear browsing data options |
-| `Ctrl+Shift+B` | Toggle bookmarks bar |
-| `Ctrl+Shift+N` | New incognito/private window |
-| `Ctrl+P` | Print page |
-| `Ctrl+S` | Save page |
-
-### Developer Tools
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+Shift+I` or `F12` | Open developer tools |
-| `Ctrl+Shift+J` | Open developer tools console |
-| `Ctrl+Shift+C` | Inspect element tool (element selector) |
-| `Ctrl+Shift+M` | Toggle device emulation (responsive design mode) |
-| `F8` or `Ctrl+\` | Pause/resume script execution |
-| `F10` or `Ctrl+'` | Step over next function call |
-| `F11` or `Ctrl+;` | Step into next function call |
-| `Shift+F11` or `Ctrl+Shift+;` | Step out of current function |
-
-Source:
-- Common browser shortcuts (Chrome, Firefox, Edge)
-
- | Go to the last tab |
+| `g#` | Go to the last tab |
 | `t` | Create new tab |
 | `x` | Close current tab |
 | `X` | Restore closed tab |
 | `^` | Go to previously-visited tab |
 | `T` | Search through your open tabs |
 
-### History
+### Browser Vimium History
+
 | Shortcut | Action |
 |----------|--------|
 | `H` | Go back in history |
 | `L` | Go forward in history |
 
-### Marks
+### Browser Vimium  Marks
+
 | Shortcut | Action |
 |----------|--------|
 | `ma` | Set local mark "a" |
@@ -814,7 +448,8 @@ Source:
 | `'a` | Jump to local mark "a" |
 | `'A` | Jump to global mark "A" |
 
-### Advanced Navigation
+### Browser Vimium  Advanced Navigation
+
 | Shortcut | Action |
 |----------|--------|
 | `/` | Enter find mode |
@@ -827,7 +462,8 @@ Source:
 | `[[` | Follow the link labeled "previous" or "<" |
 | `]]` | Follow the link labeled "next" or ">" |
 
-### Visual Mode
+### Browser Vimium  Visual Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `v` | Enter visual mode |
@@ -837,7 +473,8 @@ Source:
 | `y` | Copy selected text |
 | `Esc` | Exit visual mode |
 
-### Miscellaneous
+###  Browser Vimium Miscellaneous
+
 | Shortcut | Action |
 |----------|--------|
 | `i` | Enter insert mode (disable Vimium) |
@@ -849,7 +486,8 @@ Source:
 | `zz` | Reset zoom to default |
 | `yf` | Copy a link URL to the clipboard |
 
-### Advanced Commands
+###  Browser Vimium Advanced Commands
+
 | Shortcut | Action |
 |----------|--------|
 | `:` | Enter command mode |
@@ -862,9 +500,10 @@ Source:
 Source:
 - Vimium browser extension documentation
 
-## VS Code Keyboard Shortcuts
+## VSCode
 
-### Editor Basics
+### VSCode Editor Basics
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+X` | Cut line (empty selection) |
@@ -885,7 +524,8 @@ Source:
 | `Ctrl+Shift+Space` | Trigger parameter hints |
 | `Tab` | Emmet expand abbreviation (in HTML/CSS files) |
 
-### Multi-cursor and Selection
+### VSCode Multi-cursor and Selection
+
 | Shortcut | Action |
 |----------|--------|
 | `Alt+Click` | Insert cursor |
@@ -899,7 +539,8 @@ Source:
 | `Shift+Alt+(drag mouse)` | Column (box) selection |
 | `Ctrl+Shift+Alt+(arrow key)` | Column (box) selection |
 
-### Rich Language Editing
+### VSCode Rich Language Editing
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+Space` | Trigger suggestion |
@@ -915,7 +556,8 @@ Source:
 | `Ctrl+K Ctrl+X` | Trim trailing whitespace |
 | `Ctrl+K M` | Change file language |
 
-### Navigation
+### VSCode Navigation
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+T` | Show all symbols |
@@ -934,7 +576,8 @@ Source:
 | `Ctrl+K Ctrl+D` | Move last selection to next Find match |
 | `Alt+C` / `Alt+R` / `Alt+W` | Toggle case sensitivity / regex / whole word |
 
-### Editor Management
+### VSCode Editor Management
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+F4` / `Ctrl+W` | Close editor |
@@ -945,7 +588,8 @@ Source:
 | `Ctrl+Shift+PgUp` / `Ctrl+Shift+PgDn` | Move editor left/right |
 | `Ctrl+K ←` / `Ctrl+K →` | Move active editor group |
 
-### File Management
+### VSCode File Management
+
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+N` | New file |
@@ -963,7 +607,8 @@ Source:
 | `Ctrl+K R` | Reveal active file in Explorer |
 | `Ctrl+K O` | Show active file in new window/instance |
 
-### Display
+### VSCode Display
+
 | Shortcut | Action |
 |----------|--------|
 | `F11` | Toggle full screen |
@@ -982,7 +627,8 @@ Source:
 | `Ctrl+K V` | Open Markdown preview to the side |
 | `Ctrl+K Z` | Zen Mode (Esc Esc to exit) |
 
-### Debug
+### VSCode Debug
+
 | Shortcut | Action |
 |----------|--------|
 | `F9` | Toggle breakpoint |
@@ -992,7 +638,8 @@ Source:
 | `F10` | Step over |
 | `Ctrl+K Ctrl+I` | Show hover |
 
-### Integrated Terminal
+### VSCode Integrated Terminal
+
 | Shortcut | Action |
 |----------|--------|
 | ``Ctrl+` `` | Show integrated terminal |
@@ -1008,7 +655,8 @@ Source:
 
 ## NeoVim Keyboard Shortcuts
 
-### Changing Modes
+### NeoVim Changing Modes
+
 | Shortcut | Action |
 |----------|--------|
 | `<ESC>` | Exit from other modes into NORMAL mode |
@@ -1020,7 +668,8 @@ Source:
 | `<CTRL>-v` | Enter Visual mode (block selection) |
 | `:` | Enter COMMAND-LINE mode |
 
-### Normal Mode Basics
+### NeoVim Normal Mode Basics
+
 | Shortcut | Action |
 |----------|--------|
 | `J` | Join line at cursor with line below it |
@@ -1031,14 +680,16 @@ Source:
 | `ZZ` | Write file and exit |
 | `.` | Repeat last change |
 
-### Operators
+### NeoVim Operators
+
 | Shortcut | Action |
 |----------|--------|
 | `y` | Copy (Yank) |
 | `c` | Change (delete and enter INSERT mode) |
 | `d` | Delete |
 
-### Motions
+### NeoVim Motions
+
 | Shortcut | Action |
 |----------|--------|
 | `w` / `W` | Start of next word/WORD |
@@ -1052,7 +703,8 @@ Source:
 | `t{char}` / `T{char}` | Forward/backward until character (stops before) |
 | `%` | Matching pair (parenthesis, brackets) |
 
-### Cursor Movements
+### NeoVim Cursor Movements
+
 | Shortcut | Action |
 |----------|--------|
 | `h` or `<LEFT>` | Move left |
@@ -1063,7 +715,8 @@ Source:
 | `M` | Middle line on screen |
 | `L` | Last line on screen (Low) |
 
-### Scrolling
+### NeoVim Scrolling
+
 | Shortcut | Action |
 |----------|--------|
 | `<CTRL>-u` | Scroll half page up |
@@ -1076,7 +729,8 @@ Source:
 | `zz` | Move cursor line to middle of screen |
 | `zb` | Move cursor line to bottom of screen |
 
-### Selection Objects
+### NeoVim Selection Objects
+
 | Prefix + Object | Action |
 |----------|--------|
 | `i` / `a` + `w` | Inner/a word |
@@ -1088,7 +742,8 @@ Source:
 | `i` / `a` + `<` or `>` | Inner/a <> block |
 | `i` / `a` + `{` or `}` | Inner/a {} block |
 
-### Common Shortcuts
+### NeoVim Common Shortcuts
+
 | Shortcut | Action |
 |----------|--------|
 | `s` | Change one character |
@@ -1101,7 +756,8 @@ Source:
 | `cc` or `S` | Change whole line |
 | `dd` | Delete whole line |
 
-### Window Management
+### NeoVim Window Management
+
 | Shortcut | Action |
 |----------|--------|
 | `<CTRL>-w w` | Jump between windows |
@@ -1113,7 +769,8 @@ Source:
 | `<CTRL>-w H/J/K/L` | Move window (left/down/up/right) |
 | `<CTRL>-w o` | Keep only current window (close others) |
 
-### Visual Block Mode
+### NeoVim Visual Block Mode
+
 | Shortcut | Action |
 |----------|--------|
 | `o` | Change cursor to other end of selection |
@@ -1122,7 +779,8 @@ Source:
 | `A{string}<Esc>` | Insert text at right of block on each line |
 | `C{string}<Esc>` | Delete block and enter insert mode |
 
-### Operator+Motion Action Combinations
+### NeoVim Operator+Motion Action Combinations
+
 | Shortcut | Action |
 |----------|--------|
 | `dw` | Delete to next word |
@@ -1150,7 +808,8 @@ Source:
 | `yi"` | Yank text inside "" |
 | `yip` | Yank inner paragraph |
 
-### Marks
+### NeoVim Marks
+
 | Shortcut | Action |
 |----------|--------|
 | `m{char}` | Set mark at cursor position (a-z for file-local, A-Z for global) |
@@ -1164,7 +823,8 @@ Source:
 | `` `] `` | Jump to end of last yanked text |
 | `:marks` | List all marks |
 
-### Folding
+### NeoVim Folding
+
 | Shortcut | Action |
 |----------|--------|
 | `zo` | Open fold |
@@ -1175,7 +835,8 @@ Source:
 | `zj` | Move to next fold |
 | `zk` | Move to previous fold |
 
-### Macros
+### NeoVim Macros
+
 | Shortcut | Action |
 |----------|--------|
 | `q{char}` | Start recording macro into register {char} |
@@ -1184,7 +845,8 @@ Source:
 | `@@` | Repeat last executed macro |
 | `{count}@{char}` | Execute macro {count} times |
 
-### Search and Replace
+### NeoVim Search and Replace
+
 | Shortcut | Action |
 |----------|--------|
 | `/{pattern}` | Search forward |
@@ -1194,7 +856,8 @@ Source:
 | `#` | Search backward for word under cursor |
 | `:s/from/to/[flags]` | Find and replace |
 
-### Command-Line Mode
+### NeoVim Command-Line Mode
+
 | Command | Action |
 |---------|--------|
 | `:edit filename` | Edit new file or load existing |
@@ -1205,7 +868,8 @@ Source:
 | `:file filename` | Change current filename |
 | `:s/from/to/[flags]` | Find and replace |
 
-### Window Commands
+### NeoVim Window Commands
+
 | Command | Action |
 |---------|--------|
 | `:new` | Open window on new empty file (above) |
@@ -1219,7 +883,8 @@ Source:
 
 ## LazyVim Keyboard Shortcuts
 
-### Navigation & Windows
+### LazyVim Navigation & Windows
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<C-h>` | Go to left window | n |
@@ -1238,7 +903,8 @@ Source:
 | `<leader>wm` / `<leader>uZ` | Toggle zoom mode | n |
 | `<leader>uz` | Toggle zen mode | n |
 
-### Buffer Management
+### LazyVim Buffer Management
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<S-h>` / `[b` | Previous buffer | n |
@@ -1254,7 +920,8 @@ Source:
 | `[B` | Move buffer prev | n |
 | `]B` | Move buffer next | n |
 
-### Tab Management
+### LazyVim Tab Management
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader><tab>l` | Last tab | n |
@@ -1265,7 +932,8 @@ Source:
 | `<leader><tab>d` | Close tab | n |
 | `<leader><tab>o` | Close other tabs | n |
 
-### Search & Find
+### LazyVim Search & Find
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<esc>` | Escape and clear hlsearch | i, n, s |
@@ -1280,7 +948,8 @@ Source:
 | `<leader>ss` | Goto symbol (aerial) | n |
 | `<leader>sr` | Search and replace | n, v |
 
-### File Operations
+### LazyVim File Operations
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<C-s>` | Save file | i, x, n, s |
@@ -1293,7 +962,8 @@ Source:
 | `<leader>fR` | Recent files (cwd) | n |
 | `<leader>fc` | Find config file | n |
 
-### Code Navigation & LSP
+### LazyVim Code Navigation & LSP
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>cl` | LSP info | n |
@@ -1321,7 +991,8 @@ Source:
 | `<leader>cs` | Symbols (trouble) | n |
 | `<leader>cS` | LSP references (trouble) | n |
 
-### Diagnostics & Trouble
+### LazyVim Diagnostics & Trouble
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>xx` | Diagnostics (trouble) | n |
@@ -1333,7 +1004,8 @@ Source:
 | `[q` | Previous quickfix | n |
 | `]q` | Next quickfix | n |
 
-### Terminal
+### LazyVim Terminal
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>ft` | Terminal (root dir) | n |
@@ -1341,7 +1013,8 @@ Source:
 | `<c-/>` | Terminal (root dir) / Hide terminal | n, t |
 | `<c-_>` | which_key_ignore | n, t |
 
-### Git
+### LazyVim Git
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>gb` | Git blame line | n |
@@ -1351,7 +1024,8 @@ Source:
 | `<leader>gS` | Git stash | n |
 | `<leader>gd` | Git diff (hunks) | n |
 
-### UI Toggles
+### LazyVim UI Toggles
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>uf` | Toggle auto format (global) | n |
@@ -1368,13 +1042,15 @@ Source:
 | `<leader>uC` | Colorschemes | n |
 | `<leader>uh` | Toggle inlay hints | n |
 
-### Comments
+### LazyVim Comments
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `gco` | Add comment below | n |
 | `gcO` | Add comment above | n |
 
-### Debug
+### LazyVim Debug
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>dpp` | Toggle profiler | n |
@@ -1393,7 +1069,8 @@ Source:
 | `<leader>du` | Dap UI | n |
 | `<leader>de` | Eval | n, v |
 
-### Extra Plugins
+### LazyVim Extra Plugins
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>l` | Lazy | n |
@@ -1409,7 +1086,8 @@ Source:
 | `<leader>e` / `<leader>fe` | Explorer (root dir) | n |
 | `<leader>E` / `<leader>fE` | Explorer (cwd) | n |
 
-### Testing
+### LazyVim Testing
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>t` | +test | n |
@@ -1424,7 +1102,8 @@ Source:
 | `<leader>tw` | Toggle watch (neotest) | n |
 | `<leader>td` | Debug nearest | n |
 
-### Session Management
+### LazyVim Session Management
+
 | Key | Description | Mode |
 |-----|-------------|------|
 | `<leader>qd` | Don't save current session | n |
@@ -1435,9 +1114,10 @@ Source:
 Source:
 - Default LazyVim keybindings (Modes: n=normal, i=insert, v=visual, x=visual line, s=select)
 
-## Fish Shell fzf.fish Shortcuts
+## Fish Shell fzf
 
-### Core Commands
+### Fish Shell Core Commands
+
 | Shortcut | Action | Preview |
 |----------|--------|---------|
 | `Ctrl+Alt+F` | Search Directory | File with syntax highlighting |
@@ -1447,28 +1127,8 @@ Source:
 | `Ctrl+Alt+P` | Search Processes | CPU/memory usage and process info |
 | `Ctrl+V` | Search Variables | Variable's scope info and values |
 
-### Search Directory Features
-- Directories inserted with trailing `/` for easy navigation
-- If cursor is on a directory path with trailing slash (e.g., `.config/`), that directory is searched
-- Ignores files that are also ignored by git
-- Tab to select multiple files
+### Fish Shell Common fzf Navigation
 
-### Search Git Log Features
-- Shows formatted git log with commit hashes
-- Preview window shows full commit message and diff
-- Can be customized with `fzf_git_log_format` variable
-
-### Search Git Status Features
-- Shows modified, staged, and untracked files
-- Preview window shows git diff of the file
-- Helpful for quickly adding specific files to commits
-
-### Search History Features
-- Shows timestamp for each command
-- Timestamp format customizable via `fzf_history_time_format`
-- Preserves Fish syntax highlighting in preview
-
-### Common fzf Navigation
 | Shortcut | Action |
 |----------|--------|
 | `↑` / `↓` or `Ctrl+P` / `Ctrl+N` | Navigate up/down in results |
@@ -1483,7 +1143,8 @@ Source:
 | `Ctrl+R` | Toggle sort order |
 | `Alt+W` | Toggle preview wrap |
 
-### Configuration Options
+### Fish Shell Configuration Options
+
 To customize key bindings, use the `fzf_configure_bindings` function in your `config.fish`:
 ```fish
 # Example: Disable history search and use different key for directory search
@@ -1495,7 +1156,8 @@ Source:
 
 ## VSCode Neovim Integration
 
-### Navigation and Editing
+### VSCode Neovim Navigation and Editing
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal | `hjkl` | Basic movement |
@@ -1510,7 +1172,8 @@ Source:
 | Normal | `i` / `a` / `I` / `A` | Enter insert mode |
 | Visual | `v` / `V` / `<C-v>` | Visual selections |
 
-### Code Navigation
+### VSCode Neovim Code Navigation
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal | `gd` | Go to definition |
@@ -1522,7 +1185,8 @@ Source:
 | Normal | `gO` | Go to symbol |
 | Normal | `<C-n>` / `<C-p>` | Navigate suggestion lists |
 
-### File/Buffer Management
+### VSCode Neovim File/Buffer Management
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal | `:e {file}` | Edit file |
@@ -1536,7 +1200,8 @@ Source:
 | Normal | `<C-w>h/j/k/l` | Navigate splits |
 | Normal | `<C-w>o` / `:only` | Keep only current window |
 
-### Window/Tab Management
+### VSCode Neovim Window/Tab Management
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal | `:tabnew` | New tab |
@@ -1546,7 +1211,8 @@ Source:
 | Normal | `<C-w>>` / `<C-w><` | Resize width |
 | Normal | `<C-Up/Down/Left/Right>` | Resize panes |
 
-### Multiple Cursors
+### VSCode Neovim Multiple Cursors
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Visual Line | `ma` / `mA` | Add cursor at end of each line |
@@ -1555,7 +1221,8 @@ Source:
 | Visual Block | `mi` | Add cursor before block |
 | Insert | `<C-v>` passthrough | Use VSCode multi-cursor |
 
-### Code Actions and Formatting
+### VSCode Neovim Code Actions and Formatting
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal/Visual | `=` | Format selection |
@@ -1564,7 +1231,8 @@ Source:
 | Normal | `<leader>cr` | Rename symbol |
 | Normal | `<leader>cf` | Format file |
 
-### Explorer Navigation
+### VSCode Neovim Explorer Navigation
+
 | Mode | Shortcut | Action |
 |------|----------|--------|
 | Normal | `j` / `k` | Move up/down |

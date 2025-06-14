@@ -8,21 +8,19 @@ slug = 'shortcutsall'
 
 Guide till tangentbordsgenvägar för Linux och utvecklarverktyg
 
-## Innehållsförteckning
+- [Ubuntu[Gnome]](#ubuntu)
+- [Zellij](#zellij)
+- [Fish Shell (Vim-läge)](#fish-shell-vim)
+- [Fish Shell (Standard-läge)](#fish-shell-standard)
+- [Fish Shell (fzf.fish)](#fish-shell-fzf)
+- [NeoVim](#neovim)
+- [LazyVim](#lazyvim)
+- [VSCode Neovim](#vscode-neovim)
+- [VSCode](#vscode)
+- [Webbläsare](#webbläsare)
+- [Webbläsare Vimium](#webbläsare-vimium)
 
-- [Viktiga Ubuntu (Gnome) tangentbordsgenvägar](#viktiga-ubuntu-gnome-tangentbordsgenvägar)
-- [Zellij tangentbordsgenvägar](#zellij-tangentbordsgenvägar)
-- [Vim-läge i Fish Shell](#vim-läge-i-fish-shell)
-- [Standardläge i Fish Shell](#standardläge-i-fish-shell)
-- [Webbläsargenvägar](#webbläsargenvägar)
-- [Vimium webbläsartillägg genvägar](#vimium-webbläsartillägg-genvägar)
-- [VS Code tangentbordsgenvägar](#vs-code-tangentbordsgenvägar)
-- [NeoVim tangentbordsgenvägar](#neovim-tangentbordsgenvägar)
-- [LazyVim tangentbordsgenvägar](#lazyvim-tangentbordsgenvägar)
-- [Fish Shell fzf.fish genvägar](#fish-shell-fzffish-genvägar)
-- [VSCode Neovim-integration](#vscode-neovim-integration)
-
-## Viktiga Ubuntu (Gnome) tangentbordsgenvägar
+## Ubuntu
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -33,10 +31,8 @@ Guide till tangentbordsgenvägar för Linux och utvecklarverktyg
 | `Super+Vänster/Höger/Upp/Ner` | Fäst fönster vänster/höger/maximera/minimera |
 | `Alt+Tab` (Alt+Shift+Tab) | Växla programfönster |
 | `Super+Tab` (Super+Shift+Tab) | Växla programgrupp |
-| `Ctrl+Alt+Tab` | Växla mellan fönster i alla arbetsytor (osäker på denna todo) |
-| `Ctrl+Alt+Upp/Ner/Vänster/Höger` | Växla arbetsyta |
 | `Alt+F6` | Snabbväxla fönster i samma program |
-| Ctrl+Alt+D` | Visa skrivbord (tryck igen för att återställa fönster) |
+| `Ctrl+Alt+D` | Visa skrivbord (tryck igen för att återställa fönster) |
 | `Super+M` | Växla notiseringsrad |
 | `Ctrl+Alt+L` | Lås skärmen |
 | `Ctrl+Alt+Del` | Logga ut |
@@ -47,33 +43,27 @@ Guide till tangentbordsgenvägar för Linux och utvecklarverktyg
 | `Alt+PrtScr` | Ta skärmdump av fönster |
 | `Shift+PrtScr` | Ta skärmdump av område |
 
-> 📋 Obs: Versaler i genvägar betyder inte att du trycker på Shift-tangenten. Till exempel betyder T endast 't'-tangenten, inte Shift+t.
->
-### Anpassade tangentbordsgenvägar
-
 Skapa dina egna genvägar genom att gå till:
 Inställningar → Enheter → Tangentbord → Anpassade genvägar
-Källor:
 
 - <https://itsfoss.com/ubuntu-shortcuts/>
 
-## Zellij tangentbordsgenvägar
+## Zellij
 
-### Låst läge
+### Zellij låst läge
+
+Normalläge är standardläget i Zellij.
+Ibland kan man behöva åsidosätta Zellijs tangentbindningar.
 
 | Genväg | Åtgärd |
 |----------|--------|
 | `Ctrl g` | Växla till normalläge |
 
-### Normalläge
-
-Normalläge är standardläget i Zellij.
-
-### Storleksändringsläge
+### Zellij storleksändringsläge
 
 | Genväg | Åtgärd |
 |----------|--------|
-| `Ctrl n` | Växla till normalläge |
+| `Ctrl n` | Växla till normalläge/storleksändringsläge |
 | `h` / `←` | Öka storlek vänster |
 | `j` / `↓` | Öka storlek nedåt |
 | `k` / `↑` | Öka storlek uppåt |
@@ -85,7 +75,7 @@ Normalläge är standardläget i Zellij.
 | `=` / `+` | Öka storlek |
 | `-` | Minska storlek |
 
-### Panelläge
+### Zellij panelläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -106,7 +96,7 @@ Normalläge är standardläget i Zellij.
 | `c` | Växla till namnändringläge för panel med panelnamninmatning |
 | `i` | Växla panel nålad och växla till normalläge |
 
-### Flyttläge
+### Zellij flyttläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -118,7 +108,7 @@ Normalläge är standardläget i Zellij.
 | `k` / `↑` | Flytta panel uppåt |
 | `l` / `→` | Flytta panel höger |
 
-### Flikläge
+### Zellij flikläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -135,7 +125,7 @@ Normalläge är standardläget i Zellij.
 | `1`-`9` | Gå till flik 1-9 och växla till normalläge |
 | `Tab` | Växla flik |
 
-### Rullningsläge
+### Zellij rullningsläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -150,7 +140,7 @@ Normalläge är standardläget i Zellij.
 | `d` | Halv sida rulla nedåt |
 | `u` | Halv sida rulla uppåt |
 
-### Sökläge
+### Zellij sökläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -168,28 +158,28 @@ Normalläge är standardläget i Zellij.
 | `w` | Växla radbrytningsalternativ |
 | `o` | Växla hela ord-alternativ |
 
-### Sökinmatningsläge
+### Zellij sökinmatningsläge
 
 | Genväg | Åtgärd |
 |----------|--------|
 | `Ctrl c` / `Esc` | Växla till rullningsläge |
 | `Enter` | Växla till sökläge |
 
-### Namnändringsläge för flik
+### Zellij namnändringsläge för flik
 
 | Genväg | Åtgärd |
 |----------|--------|
 | `Ctrl c` | Växla till normalläge |
 | `Esc` | Ångra namnändring av flik och växla till flikläge |
 
-### Namnändringsläge för panel
+### Zellij namnändringsläge för panel
 
 | Genväg | Åtgärd |
 |----------|--------|
 | `Ctrl c` | Växla till normalläge |
 | `Esc` | Ångra namnändring av panel och växla till panelläge |
 
-### Sessionsläge
+### Zellij sessionsläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -201,7 +191,7 @@ Normalläge är standardläget i Zellij.
 | `p` | Starta eller fokusera pluginhanteraren och växla till normalläge |
 | `a` | Starta eller fokusera om-pluginet och växla till normalläge |
 
-### Tmux-läge
+### Zellij tmux-läge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -223,7 +213,7 @@ Normalläge är standardläget i Zellij.
 | `Space` | Nästa layoutbyte |
 | `x` | Stäng fokus och växla till normalläge |
 
-### Delade genvägar
+### Zellij delade genvägar
 
 | Genväg | Åtgärd | Tillgänglig i |
 |----------|--------|-------------|
@@ -243,7 +233,7 @@ Normalläge är standardläget i Zellij.
 | `Alt ]` | Nästa layoutbyte | Alla utom låst |
 | `Enter` / `Esc` | Växla till normalläge | Alla utom normal och låst |
 
-### Lägesväxlingsgenvägar
+### Zellij lägesväxlingsgenvägar
 
 | Genväg | Åtgärd | Tillgänglig i |
 |----------|--------|-------------|
@@ -258,9 +248,7 @@ Källa:
 
 - <https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/config/default.kdl>
 
-## Vim-läge i Fish Shell
-
-### Viktiga genvägar
+## Fish Shell Vim
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -283,13 +271,12 @@ Källa:
 | `v` | Gå in i visuellt läge för markering |
 | `y` | Kopiera (yank) markerad text |
 | `p` | Klistra in |
+
 Källa:
 
 - Fish-skal dokumentation (fish_vi_key_bindings)
 
-## Standardläge i Fish Shell
-
-### Navigering och historik
+## Fish Shell standard
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -301,11 +288,6 @@ Källa:
 | `Ctrl+N` eller `↓` | Nästa kommando i historiken |
 | `Ctrl+R` | Baklängessökning genom historiken |
 | `Alt+.` | Infoga sista argumentet från föregående kommando |
-
-### Redigering
-
-| Genväg | Åtgärd |
-|----------|--------|
 | `Ctrl+U` | Ta bort från markören till radens början |
 | `Ctrl+K` | Ta bort från markören till radens slut |
 | `Ctrl+W` | Ta bort föregående ord |
@@ -314,7 +296,7 @@ Källa:
 | `Alt+T` | Byt plats på två ord |
 | `Ctrl+L` | Rensa skärmen |
 
-### Kommandokontroll
+## Fish Shell kommandokontroll
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -323,13 +305,14 @@ Källa:
 | `Tab` | Auto-komplettera |
 | `Alt+E` | Redigera kommando i extern editor |
 | `Alt+L` | Lista kataloginnehåll |
+
 Källa:
 
 - Fish-skal dokumentation (standardtangentbindningar)
 
-## Webbläsargenvägar
+## Webbläsare
 
-### Navigering
+### Webbläsare navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -349,7 +332,7 @@ Källa:
 | `Ctrl+F5` eller `Shift+F5` | Ladda om sidan (kringgå cache) |
 | `Esc` | Stoppa sidladdning |
 
-### Visning och läsning
+### Webbläsare visning och läsning
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -370,7 +353,7 @@ Källa:
 | `Ctrl+H` | Visa historik |
 | `Ctrl+J` | Visa nedladdningar |
 
-### Redigering
+### Webbläsare redigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -381,7 +364,7 @@ Källa:
 | `Ctrl+Y` eller `Ctrl+Shift+Z` | Gör om |
 | `Ctrl+A` | Markera allt |
 
-### Övrigt
+### Webbläsare övrigt
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -396,7 +379,7 @@ Källa:
 | `Ctrl+P` | Skriv ut sida |
 | `Ctrl+S` | Spara sida |
 
-### Utvecklarverktyg
+### Webbläsare utvecklarverktyg
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -408,13 +391,14 @@ Källa:
 | `F10` eller `Ctrl+'` | Stega över nästa funktionsanrop |
 | `F11` eller `Ctrl+;` | Stega in i nästa funktionsanrop |
 | `Shift+F11` eller `Ctrl+Shift+;` | Stega ut ur aktuell funktion |
+
 Källa:
 
 - Vanliga webbläsargenvägar (Chrome, Firefox, Edge)
 
-## Vimium webbläsartillägg genvägar
+## Webbläsare Vimium
 
-### Grundläggande navigering
+### Webbläsare Vimium grundläggande navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -435,7 +419,7 @@ Källa:
 | `p` | Öppna urklippets URL i aktuell flik |
 | `P` | Öppna urklippets URL i ny flik |
 
-### Flikhantering
+### Webbläsare Vimium flikhantering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -449,14 +433,14 @@ Källa:
 | `^` | Gå till tidigare besökt flik |
 | `T` | Sök bland dina öppna flikar |
 
-### Historik
+### Webbläsare Vimium historik
 
 | Genväg | Åtgärd |
 |----------|--------|
 | `H` | Gå bakåt i historiken |
 | `L` | Gå framåt i historiken |
 
-### Markeringar
+### Webbläsare Vimium markeringar
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -465,7 +449,7 @@ Källa:
 | `'a` | Hoppa till lokal markering "a" |
 | `'A` | Hoppa till global markering "A" |
 
-### Avancerad navigering
+### Webbläsare Vimium avancerad navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -479,7 +463,7 @@ Källa:
 | `[[` | Följ länken märkt "föregående" eller "<" |
 | `]]` | Följ länken märkt "nästa" eller ">" |
 
-### Visuellt läge
+### Webbläsare Vimium visuellt läge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -490,7 +474,7 @@ Källa:
 | `y` | Kopiera markerad text |
 | `Esc` | Avsluta visuellt läge |
 
-### Övrigt
+### Webbläsare Vimium övrigt
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -503,7 +487,7 @@ Källa:
 | `zz` | Återställ zoom till standard |
 | `yf` | Kopiera en länk-URL till urklipp |
 
-### Avancerade kommandon
+### Webbläsare Vimium avancerade kommandon
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -513,13 +497,14 @@ Källa:
 | `:tabnew example.com` | Öppna URL i ny flik |
 | `:duplicate` | Duplicera aktuell flik |
 | `:settings` | Öppna Vimium-inställningar |
+
 Källa:
 
 - Vimium webbläsartillägg dokumentation
 
-## VS Code tangentbordsgenvägar
+## VSCode
 
-### Grundläggande redigering
+### VSCode Grundläggande redigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -541,7 +526,7 @@ Källa:
 | `Ctrl+Shift+Space` | Trigga parameterförslag |
 | `Tab` | Emmet expandera förkortning (i HTML/CSS-filer) |
 
-### Multimarkör och markering
+### VSCode multimarkör och markering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -556,7 +541,7 @@ Källa:
 | `Shift+Alt+(dra mus)` | Kolumn (block) markering |
 | `Ctrl+Shift+Alt+(piltangent)` | Kolumn (block) markering |
 
-### Avancerad språkredigering
+### VSCode avancerad språkredigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -573,7 +558,7 @@ Källa:
 | `Ctrl+K Ctrl+X` | Ta bort avslutande blanksteg |
 | `Ctrl+K M` | Ändra filspråk |
 
-### Navigering
+### VSCode navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -593,7 +578,7 @@ Källa:
 | `Ctrl+K Ctrl+D` | Flytta senaste markeringen till nästa sökträff |
 | `Alt+C` / `Alt+R` / `Alt+W` | Växla skiftlägeskänslighet / regex / hela ord |
 
-### Editorhantering
+### VSCode editorhantering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -605,7 +590,7 @@ Källa:
 | `Ctrl+Shift+PgUp` / `Ctrl+Shift+PgDn` | Flytta editor vänster/höger |
 | `Ctrl+K ←` / `Ctrl+K →` | Flytta aktiv editorgrupp |
 
-### Filhantering
+### VSCode filhantering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -624,7 +609,7 @@ Källa:
 | `Ctrl+K R` | Visa aktiv fil i Utforskaren |
 | `Ctrl+K O` | Visa aktiv fil i nytt fönster/instans |
 
-### Visning
+### VSCode visning
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -644,7 +629,7 @@ Källa:
 | `Ctrl+K V` | Öppna Markdown-förhandsgranskning åt sidan |
 | `Ctrl+K Z` | Zen-läge (Esc Esc för att avsluta) |
 
-### Felsökning
+### VSCode felsökning
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -655,7 +640,7 @@ Källa:
 | `F10` | Stega över |
 | `Ctrl+K Ctrl+I` | Visa hovring |
 
-### Integrerad terminal
+### VSCode integrerad terminal
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -666,13 +651,14 @@ Källa:
 | `Ctrl+↑` / `Ctrl+↓` | Rulla upp/ner |
 | `Shift+PgUp` / `Shift+PgDn` | Rulla sida upp/ner |
 | `Ctrl+Home` / `Ctrl+End` | Rulla till toppen/botten |
+
 Källa:
 
 - VS Code standardtangentbordsgenvägar för Windows/Linux
 
-## NeoVim tangentbordsgenvägar
+## NeoVim
 
-### Ändra lägen
+### NeoVim ändra lägen
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -685,7 +671,7 @@ Källa:
 | `<CTRL>-v` | Gå in i visuellt läge (blockmarkering) |
 | `:` | Gå in i COMMAND-LINE-läge |
 
-### Grundläggande i normalläge
+### NeoVim grundläggande i normalläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -697,7 +683,7 @@ Källa:
 | `ZZ` | Skriv fil och avsluta |
 | `.` | Upprepa senaste ändring |
 
-### Operatorer
+### NeoVim operatorer
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -705,7 +691,7 @@ Källa:
 | `c` | Ändra (ta bort och gå in i INSERT-läge) |
 | `d` | Ta bort |
 
-### Rörelsekommandon
+### NeoVim rörelsekommandon
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -720,7 +706,7 @@ Källa:
 | `t{char}` / `T{char}` | Framåt/bakåt fram till tecken (stannar före) |
 | `%` | Matchande par (parentes, klamrar) |
 
-### Markörrörelser
+### NeoVim markörrörelser
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -732,7 +718,7 @@ Källa:
 | `M` | Mittlinjen på skärmen |
 | `L` | Sista raden på skärmen (Low) |
 
-### Rullning
+### NeoVim rullning
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -746,7 +732,7 @@ Källa:
 | `zz` | Flytta markörrad till mitten av skärmen |
 | `zb` | Flytta markörrad till botten av skärmen |
 
-### Markeringsobjekt
+### NeoVim markeringsobjekt
 
 | Prefix + Objekt | Åtgärd |
 |----------|--------|
@@ -759,7 +745,7 @@ Källa:
 | `i` / `a` + `<` eller `>` | Inre/ett <> block |
 | `i` / `a` + `{` eller `}` | Inre/ett {} block |
 
-### Vanliga genvägar
+### NeoVim vanliga genvägar
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -773,7 +759,7 @@ Källa:
 | `cc` eller `S` | Ändra hela raden |
 | `dd` | Ta bort hela raden |
 
-### Fönsterhantering
+### NeoVim fönsterhantering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -786,7 +772,7 @@ Källa:
 | `<CTRL>-w H/J/K/L` | Flytta fönster (vänster/ner/upp/höger) |
 | `<CTRL>-w o` | Behåll endast aktuellt fönster (stäng andra) |
 
-### Visuellt blockläge
+### NeoVim visuellt blockläge
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -796,7 +782,7 @@ Källa:
 | `A{string}<Esc>` | Infoga text till höger om blocket på varje rad |
 | `C{string}<Esc>` | Ta bort block och gå in i insättningsläge |
 
-### Operator+rörelsekommando-kombinationer
+### NeoVim operator+rörelsekommando-kombinationer
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -825,7 +811,7 @@ Källa:
 | `yi"` | Kopiera text inuti "" |
 | `yip` | Kopiera inre stycke |
 
-### Markörer
+### NeoVim markörer
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -840,7 +826,7 @@ Källa:
 | `` `] `` | Hoppa till slutet av senast kopierad text |
 | `:marks` | Lista alla markörer |
 
-### Vikning
+### NeoVim vikning
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -852,7 +838,7 @@ Källa:
 | `zj` | Flytta till nästa vikning |
 | `zk` | Flytta till föregående vikning |
 
-### Makron
+### NeoVim makron
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -862,7 +848,7 @@ Källa:
 | `@@` | Upprepa senast exekverade makro |
 | `{count}@{char}` | Exekvera makro {count} gånger |
 
-### Sök och ersätt
+### NeoVim sök och ersätt
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -873,7 +859,7 @@ Källa:
 | `#` | Sök bakåt efter ord under markören |
 | `:s/from/to/[flags]` | Hitta och ersätt |
 
-### Kommandoradsläge
+### NeoVim kommandoradsläge
 
 | Kommando | Åtgärd |
 |---------|--------|
@@ -885,7 +871,7 @@ Källa:
 | `:file filename` | Ändra aktuellt filnamn |
 | `:s/from/to/[flags]` | Hitta och ersätt |
 
-### Fönsterkommandon
+### NeoVim fönsterkommandon
 
 | Kommando | Åtgärd |
 |---------|--------|
@@ -894,13 +880,14 @@ Källa:
 | `:vsplit` | Dela fönster vertikalt |
 | `:close` | Stäng aktuellt fönster |
 | `:only` | Stäng alla fönster utom aktuellt |
+
 Källa:
 
 - <https://cheatography.com/marconlsantos/cheat-sheets/neovim/>
 
-## LazyVim tangentbordsgenvägar
+## LazyVim 
 
-### Navigering och fönster
+### LazyVim navigering och fönster
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -920,7 +907,7 @@ Källa:
 | `<leader>wm` / `<leader>uZ` | Växla zoomläge | n |
 | `<leader>uz` | Växla zenläge | n |
 
-### Bufferthantering
+### LazyVim bufferthantering
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -937,7 +924,7 @@ Källa:
 | `[B` | Flytta buffert föregående | n |
 | `]B` | Flytta buffert nästa | n |
 
-### Flikhantering
+### LazyVim flikhantering
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -949,7 +936,7 @@ Källa:
 | `<leader><tab>d` | Stäng flik | n |
 | `<leader><tab>o` | Stäng andra flikar | n |
 
-### Sök och hitta
+### LazyVim sök och hitta
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -965,7 +952,7 @@ Källa:
 | `<leader>ss` | Gå till symbol (aerial) | n |
 | `<leader>sr` | Sök och ersätt | n, v |
 
-### Filoperationer
+### LazyVim filoperationer
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -979,7 +966,7 @@ Källa:
 | `<leader>fR` | Senaste filer (aktuell arbetskatalog) | n |
 | `<leader>fc` | Hitta konfigurationsfil | n |
 
-### Kodnavigering och LSP
+### LazyVim kodnavigering och LSP
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1008,7 +995,7 @@ Källa:
 | `<leader>cs` | Symboler (trouble) | n |
 | `<leader>cS` | LSP-referenser (trouble) | n |
 
-### Diagnostik och problematik
+### LazyVim diagnostik och problematik
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1021,7 +1008,7 @@ Källa:
 | `[q` | Föregående quickfix | n |
 | `]q` | Nästa quickfix | n |
 
-### Terminal
+### LazyVim terminal
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1030,7 +1017,7 @@ Källa:
 | `<c-/>` | Terminal (rotkatalog) / Dölj terminal | n, t |
 | `<c-_>` | which_key_ignore | n, t |
 
-### Git
+### LazyVim Git
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1041,7 +1028,7 @@ Källa:
 | `<leader>gS` | Git stash | n |
 | `<leader>gd` | Git diff (hunkar) | n |
 
-### UI-växlingar
+### LazyVim UI-växlingar
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1059,14 +1046,14 @@ Källa:
 | `<leader>uC` | Färgscheman | n |
 | `<leader>uh` | Växla inlagda tips | n |
 
-### Kommentarer
+### LazyVim kommentarer
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
 | `gco` | Lägg till kommentar nedanför | n |
 | `gcO` | Lägg till kommentar ovanför | n |
 
-### Felsökning
+### LazyVim felsökning
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1086,7 +1073,7 @@ Källa:
 | `<leader>du` | Dap UI | n |
 | `<leader>de` | Utvärdera | n, v |
 
-### Extra plugins
+### LazyVim extra plugins
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1103,7 +1090,7 @@ Källa:
 | `<leader>e` / `<leader>fe` | Utforskare (rotkatalog) | n |
 | `<leader>E` / `<leader>fE` | Utforskare (aktuell arbetskatalog) | n |
 
-### Testning
+### LazyVim testning
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1119,7 +1106,7 @@ Källa:
 | `<leader>tw` | Växla övervakning (neotest) | n |
 | `<leader>td` | Felsök närmaste | n |
 
-### Sessionshantering
+### LazyVim sessionshantering
 
 | Tangent | Beskrivning | Läge |
 |-----|-------------|------|
@@ -1131,9 +1118,9 @@ Källa:
 
 - Standard LazyVim-tangentbindningar (Lägen: n=normal, i=infoga, v=visuell, x=visuell rad, s=markera)
 
-## Fish Shell fzf.fish genvägar
+## Fish Shell fzf
 
-### Grundkommandon
+### Fish Shell fzf grundkommandon
 
 | Genväg | Åtgärd | Förhandsgranskning |
 |----------|--------|---------|
@@ -1144,32 +1131,7 @@ Källa:
 | `Ctrl+Alt+P` | Sök processer | CPU/minnesanvändning och processinformation |
 | `Ctrl+V` | Sök variabler | Variabelns omfångsinformation och värden |
 
-### Sök katalog-funktioner
-
-- Kataloger infogas med avslutande `/` för enkel navigering
-- Om markören är på en katalogsökväg med avslutande snedstreck (t.ex. `.config/`), söks den katalogen
-- Ignorerar filer som också ignoreras av git
-- Tab för att välja flera filer
-
-### Sök Git-logg-funktioner
-
-- Visar formaterad git-logg med commit-hash
-- Förhandsgranskningsfönstret visar fullständigt commit-meddelande och diff
-- Kan anpassas med variabeln `fzf_git_log_format`
-
-### Sök Git-status-funktioner
-
-- Visar modifierade, staged och oövervakade filer
-- Förhandsgranskningsfönstret visar git diff av filen
-- Användbart för att snabbt lägga till specifika filer till commits
-
-### Sök historik-funktioner
-
-- Visar tidsstämpel för varje kommando
-- Tidsstämpelsformat anpassningsbart via `fzf_history_time_format`
-- Bevarar Fish syntax-markering i förhandsgranskning
-
-### Vanlig fzf-navigering
+### Fish Shell fzf vanlig fzf-navigering
 
 | Genväg | Åtgärd |
 |----------|--------|
@@ -1185,22 +1147,13 @@ Källa:
 | `Ctrl+R` | Växla sorteringsordning |
 | `Alt+W` | Växla förhandsgranskningsradbrytning |
 
-### Konfigurationsalternativ
-
-För att anpassa tangentbindningar, använd funktionen `fzf_configure_bindings` i din `config.fish`:
-
-```fish
-# Exempel: Inaktivera historiksökning och använd annan tangent för katalogsökning
-fzf_configure_bindings --history= --directory=\e\cf
-```
-
 Källa:
 
 - fzf.fish-plugindokumentation
 
-## VSCode Neovim-integration
+## VSCode Neovim
 
-### Navigering och redigering
+### VSCode NeoVim navigering och redigering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1216,7 +1169,7 @@ Källa:
 | Normal | `i` / `a` / `I` / `A` | Gå in i infogningsläge |
 | Visuell | `v` / `V` / `<C-v>` | Visuella markeringar |
 
-### Kodnavigering
+### VSCode NeoVim kodnavigering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1229,7 +1182,7 @@ Källa:
 | Normal | `gO` | Gå till symbol |
 | Normal | `<C-n>` / `<C-p>` | Navigera förslagslistor |
 
-### Fil/bufferthantering
+### VSCode NeoVim fil/bufferthantering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1244,7 +1197,7 @@ Källa:
 | Normal | `<C-w>h/j/k/l` | Navigera delningar |
 | Normal | `<C-w>o` / `:only` | Behåll endast aktuellt fönster |
 
-### Fönster/flikhantering
+### VSCode NeoVim fönster/flikhantering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1255,7 +1208,7 @@ Källa:
 | Normal | `<C-w>>` / `<C-w><` | Ändra bredd |
 | Normal | `<C-Up/Down/Left/Right>` | Ändra storlek på paneler |
 
-### Flera markörer
+### VSCode NeoVim flera markörer
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1265,7 +1218,7 @@ Källa:
 | Visuellt block | `mi` | Lägg till markör före block |
 | Infoga | `<C-v>` genomgång | Använd VSCode multimarkör |
 
-### Kodåtgärder och formatering
+### VSCode NeoVim kodåtgärder och formatering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1275,7 +1228,7 @@ Källa:
 | Normal | `<leader>cr` | Byt namn på symbol |
 | Normal | `<leader>cf` | Formatera fil |
 
-### Utforskarnavigering
+### VSCode NeoVim utforskarnavigering
 
 | Läge | Genväg | Åtgärd |
 |------|----------|--------|
@@ -1287,6 +1240,7 @@ Källa:
 | Normal | `r` | Byt namn |
 | Normal | `d` | Ta bort |
 | Normal | `y` / `x` / `p` | Kopiera/klipp/klistra |
+
 Källa:
 
 - VSCodeVim/Neovim-tilläggsdokumentation

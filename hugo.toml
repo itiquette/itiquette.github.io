@@ -127,6 +127,11 @@ identifier = "tools"
 name = "Tools"
 url = "/tools"
 weight = 50
+[[languages.en.menu.main]]
+identifier = "links"
+name = "Links"
+url = "/links"
+weight = 60
 
 
 # Svenska språkkonfigurationen
@@ -181,6 +186,11 @@ identifier = "tools"
 name = "Verktyg"
 url = "/sv/tools"
 weight = 50
+[[languages.sv.menu.main]]
+identifier = "links"
+name = "Länkar"
+url = "/sv/links"
+weight = 60
 
 [caches]
 [caches.images]
